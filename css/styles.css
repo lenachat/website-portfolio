@@ -64,6 +64,25 @@ a:hover {
   color: var(--links-hover-color); 
 }
 
+.button-container {
+  text-align: center;
+  margin: 30px 0 20px 0;
+}
+
+.button-main {
+  background-color: var(--primary-bg-color);
+  border-radius: 7px;
+  border-width: 1px;
+  padding: 5px 12px;
+  transition: all 0.3s ease;
+}
+
+.button-main:hover {
+  background-color: var(--secondary-bg-color);
+  cursor: pointer;
+  scale: 1.1;
+}
+
 
 /* ------ Header ------ */
 
@@ -114,63 +133,38 @@ main {
   min-height: 320px;
 }
 
-@keyframes sun-move {
-  from {
-    transform: translate(0, -30px);
-  }
-  to {
-    transform: translate(0, 60px);
-  }
-}
-
-@keyframes reflection-move {
-  from {
-    transform: translate(-5px, 0px);
-  }
-  to {
-    transform: translate(5px, 0px);
-  }
-}
-
-@keyframes reflection-opacity {
-  from {
-    opacity: 1;
-  }
-  to {
-    opacity: 0;
-  }
+svg {
+  width: 40%;
+  height: auto;
+  margin-left: 30%;
+  border-radius: 10%;
+  margin-top: 20px;
 }
 
 @keyframes cloud-move {
   from {
-    transform: translate(25px, 0px);
+    transform: translate(-400px, 0px);
   }
   to {
-    transform: translate(-25px, 0px);
+    transform: translate(100px, 0px);
+  }
+}
+
+.cloud {
+  animation: 5s cloud-move infinite alternate linear;
+}
+
+@keyframes sunset {
+  from {
+    transform: translate(0, 0);
+  }
+  to {
+    transform: translate(0px, -100px);
   }
 }
 
 .sun {
-    animation: 10s sun-move infinite alternate linear;
-}
-
-.reflection1 {
-  animation: 1s reflection-move infinite alternate linear;
-}
-
-.reflection2 {
-  animation: 10s reflection-opacity infinite alternate linear;
-}
-
-.cloud {
-  animation: 10s cloud-move infinite alternate linear;
-} 
-
-svg {
-  width: 100%;
-  height: auto;
-  border-radius: 10%;
-  margin-top: 20px;
+  animation: 3s sunset infinite alternate linear;
 }
 
 /* ------ Footer ------ */
@@ -222,21 +216,6 @@ svg {
   border-radius: 50%;
   box-shadow: 5px 5px 8px rgba(92, 88, 86, 0.2);
 }
-
-.profile__grid-item button {
-  background-color: var(--primary-bg-color);
-  border-radius: 7px;
-  border-width: 1px;
-  padding: 2px 10px;
-  transition: all 0.5s ease;
-}
-
-.profile__grid-item button:hover {
-  background-color: var(--secondary-bg-color);
-  cursor: pointer;
-  scale: 1.2;
-}
-
 
 /* ------ About ------ */
 

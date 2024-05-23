@@ -52,6 +52,27 @@ a:hover {
   color: #353d39; 
 }
 
+.button-container {
+  text-align: center;
+  margin: 30px 0 20px 0;
+}
+
+.button-main {
+  background-color: #f2eeea;
+  border-radius: 7px;
+  border-width: 1px;
+  padding: 5px 12px;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.button-main:hover {
+  background-color: white;
+  cursor: pointer;
+  scale: 1.1;
+}
+
 
 /* ------ Header ------ */
 
@@ -112,115 +133,66 @@ main {
   min-height: 320px;
 }
 
-@-webkit-keyframes sun-move {
-  from {
-    -webkit-transform: translate(0, -30px);
-            transform: translate(0, -30px);
-  }
-  to {
-    -webkit-transform: translate(0, 60px);
-            transform: translate(0, 60px);
-  }
-}
-
-@keyframes sun-move {
-  from {
-    -webkit-transform: translate(0, -30px);
-            transform: translate(0, -30px);
-  }
-  to {
-    -webkit-transform: translate(0, 60px);
-            transform: translate(0, 60px);
-  }
-}
-
-@-webkit-keyframes reflection-move {
-  from {
-    -webkit-transform: translate(-5px, 0px);
-            transform: translate(-5px, 0px);
-  }
-  to {
-    -webkit-transform: translate(5px, 0px);
-            transform: translate(5px, 0px);
-  }
-}
-
-@keyframes reflection-move {
-  from {
-    -webkit-transform: translate(-5px, 0px);
-            transform: translate(-5px, 0px);
-  }
-  to {
-    -webkit-transform: translate(5px, 0px);
-            transform: translate(5px, 0px);
-  }
-}
-
-@-webkit-keyframes reflection-opacity {
-  from {
-    opacity: 1;
-  }
-  to {
-    opacity: 0;
-  }
-}
-
-@keyframes reflection-opacity {
-  from {
-    opacity: 1;
-  }
-  to {
-    opacity: 0;
-  }
+svg {
+  width: 40%;
+  height: auto;
+  margin-left: 30%;
+  border-radius: 10%;
+  margin-top: 20px;
 }
 
 @-webkit-keyframes cloud-move {
   from {
-    -webkit-transform: translate(25px, 0px);
-            transform: translate(25px, 0px);
+    -webkit-transform: translate(-400px, 0px);
+            transform: translate(-400px, 0px);
   }
   to {
-    -webkit-transform: translate(-25px, 0px);
-            transform: translate(-25px, 0px);
+    -webkit-transform: translate(100px, 0px);
+            transform: translate(100px, 0px);
   }
 }
 
 @keyframes cloud-move {
   from {
-    -webkit-transform: translate(25px, 0px);
-            transform: translate(25px, 0px);
+    -webkit-transform: translate(-400px, 0px);
+            transform: translate(-400px, 0px);
   }
   to {
-    -webkit-transform: translate(-25px, 0px);
-            transform: translate(-25px, 0px);
+    -webkit-transform: translate(100px, 0px);
+            transform: translate(100px, 0px);
+  }
+}
+
+.cloud {
+  -webkit-animation: 5s cloud-move infinite alternate linear;
+          animation: 5s cloud-move infinite alternate linear;
+}
+
+@-webkit-keyframes sunset {
+  from {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  to {
+    -webkit-transform: translate(0px, -100px);
+            transform: translate(0px, -100px);
+  }
+}
+
+@keyframes sunset {
+  from {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  to {
+    -webkit-transform: translate(0px, -100px);
+            transform: translate(0px, -100px);
   }
 }
 
 .sun {
-    -webkit-animation: 10s sun-move infinite alternate linear;
-            animation: 10s sun-move infinite alternate linear;
-}
-
-.reflection1 {
-  -webkit-animation: 1s reflection-move infinite alternate linear;
-          animation: 1s reflection-move infinite alternate linear;
-}
-
-.reflection2 {
-  -webkit-animation: 10s reflection-opacity infinite alternate linear;
-          animation: 10s reflection-opacity infinite alternate linear;
-}
-
-.cloud {
-  -webkit-animation: 10s cloud-move infinite alternate linear;
-          animation: 10s cloud-move infinite alternate linear;
-} 
-
-svg {
-  width: 100%;
-  height: auto;
-  border-radius: 10%;
-  margin-top: 20px;
+  -webkit-animation: 3s sunset infinite alternate linear;
+          animation: 3s sunset infinite alternate linear;
 }
 
 /* ------ Footer ------ */
@@ -282,23 +254,6 @@ svg {
   -webkit-box-shadow: 5px 5px 8px rgba(92, 88, 86, 0.2);
           box-shadow: 5px 5px 8px rgba(92, 88, 86, 0.2);
 }
-
-.profile__grid-item button {
-  background-color: #f2eeea;
-  border-radius: 7px;
-  border-width: 1px;
-  padding: 2px 10px;
-  -webkit-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
-  transition: all 0.5s ease;
-}
-
-.profile__grid-item button:hover {
-  background-color: white;
-  cursor: pointer;
-  scale: 1.2;
-}
-
 
 /* ------ About ------ */
 
