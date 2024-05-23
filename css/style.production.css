@@ -1,0 +1,468 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+/* ------ General rules ------ */
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: white;
+  font-family: "Kanit", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+  margin: 15px 0;
+  font-size: 16px;
+  line-height: 1.2em;
+}
+
+h1 {
+  font-weight: 200;
+  font-size: 28px;
+}
+
+h2 {
+  font-weight: 200;
+  font-size: 24px;
+}
+
+h3 {
+  font-weight: 200;
+  font-size: 21px;
+}
+
+a {
+  text-decoration: none;
+  color: #5b7265;
+  font-weight: bolder;
+}
+
+a:visited {
+  color: #5b7265;
+}
+
+a:hover {
+  cursor: pointer;
+  color: #353d39; 
+}
+
+
+/* ------ Header ------ */
+
+.page-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 20px;
+}
+
+.page-header__item {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 200px;
+          flex: 0 1 200px;
+}
+
+.page-header__item:first-child {
+  width: auto;
+  height: 40px;
+}
+
+.page-header__item:last-child {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  text-align: right;
+}
+
+.navigation-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.navigation-list li {
+  display: inline-block;
+  margin-left: 20px;
+  -webkit-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.navigation-list li a {
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.navigation-list li:hover {
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+/* ------ Main ------ */
+
+main {
+  background-color: #f2eeea;
+  padding: 15px;
+  min-height: 320px;
+}
+
+@-webkit-keyframes sun-move {
+  from {
+    -webkit-transform: translate(0, -30px);
+            transform: translate(0, -30px);
+  }
+  to {
+    -webkit-transform: translate(0, 60px);
+            transform: translate(0, 60px);
+  }
+}
+
+@keyframes sun-move {
+  from {
+    -webkit-transform: translate(0, -30px);
+            transform: translate(0, -30px);
+  }
+  to {
+    -webkit-transform: translate(0, 60px);
+            transform: translate(0, 60px);
+  }
+}
+
+@-webkit-keyframes reflection-move {
+  from {
+    -webkit-transform: translate(-5px, 0px);
+            transform: translate(-5px, 0px);
+  }
+  to {
+    -webkit-transform: translate(5px, 0px);
+            transform: translate(5px, 0px);
+  }
+}
+
+@keyframes reflection-move {
+  from {
+    -webkit-transform: translate(-5px, 0px);
+            transform: translate(-5px, 0px);
+  }
+  to {
+    -webkit-transform: translate(5px, 0px);
+            transform: translate(5px, 0px);
+  }
+}
+
+@-webkit-keyframes reflection-opacity {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes reflection-opacity {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes cloud-move {
+  from {
+    -webkit-transform: translate(25px, 0px);
+            transform: translate(25px, 0px);
+  }
+  to {
+    -webkit-transform: translate(-25px, 0px);
+            transform: translate(-25px, 0px);
+  }
+}
+
+@keyframes cloud-move {
+  from {
+    -webkit-transform: translate(25px, 0px);
+            transform: translate(25px, 0px);
+  }
+  to {
+    -webkit-transform: translate(-25px, 0px);
+            transform: translate(-25px, 0px);
+  }
+}
+
+.sun {
+    -webkit-animation: 10s sun-move infinite alternate linear;
+            animation: 10s sun-move infinite alternate linear;
+}
+
+.reflection1 {
+  -webkit-animation: 1s reflection-move infinite alternate linear;
+          animation: 1s reflection-move infinite alternate linear;
+}
+
+.reflection2 {
+  -webkit-animation: 10s reflection-opacity infinite alternate linear;
+          animation: 10s reflection-opacity infinite alternate linear;
+}
+
+.cloud {
+  -webkit-animation: 10s cloud-move infinite alternate linear;
+          animation: 10s cloud-move infinite alternate linear;
+} 
+
+svg {
+  width: 100%;
+  height: auto;
+  border-radius: 10%;
+  margin-top: 20px;
+}
+
+/* ------ Footer ------ */
+
+.page-footer {
+  clear: both;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+
+.page-footer p {
+  font-weight: 400;
+}
+
+
+/* ------ Home ------ */
+
+.profile__grid-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.profile__grid-item {
+  width: auto;
+  min-height: auto;
+}
+
+
+@supports (display: grid) {
+  .profile__grid-container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 20px 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+  }
+
+  .profile__grid-item {
+    width: auto;
+    min-height: auto;
+  } 
+}
+
+.profile__portrait {
+  float: left;
+  width: 250px; 
+  height: auto;
+  border-radius: 50%;
+  -webkit-box-shadow: 5px 5px 8px rgba(92, 88, 86, 0.2);
+          box-shadow: 5px 5px 8px rgba(92, 88, 86, 0.2);
+}
+
+.profile__grid-item button {
+  background-color: #f2eeea;
+  border-radius: 7px;
+  border-width: 1px;
+  padding: 2px 10px;
+  -webkit-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.profile__grid-item button:hover {
+  background-color: white;
+  cursor: pointer;
+  scale: 1.2;
+}
+
+
+/* ------ About ------ */
+
+.about-me__container {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.about-me__text {
+  text-align: justify;
+}
+
+.about-me__container h2 {
+  margin-top: 2em;
+}
+
+table {
+  width: 100%;
+  text-align: center;
+}
+
+th, td {
+  height: 30px;
+  padding: 0;
+}
+
+th {
+  border-bottom: 1px solid #c2c2c2;
+  font-weight: 300;
+}
+
+
+/* ------ Work ------ */
+
+/* grid fallback */
+.projects__grid-item {
+  display: inline-block;
+  width: 33%;
+}
+
+@supports (display: grid) {
+  .projects__grid-container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 20px 1fr 20px 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+    margin: 0;
+  }
+
+  .projects__grid-item {
+    background-color: white;
+    width: auto;
+    min-height: auto;
+    padding: 15px;
+  } 
+}
+
+.projects__grid-item h2 {
+  margin-top: 0;
+}
+
+
+/* ------ Contact ------ */
+
+/* grid fallback */
+.contact__grid-item {
+  display: inline-block;
+  width: 50%;
+}
+
+@supports (display: grid) {
+  .contact__grid-container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    max-width: 700px;
+    margin: 0 auto;
+  }
+  
+  .contact__grid-item {
+    min-width: 280px;
+  }
+}
+
+label, input, textarea {
+  margin-bottom: 10px;
+}
+
+form p {
+  margin-top: 0;
+  font-size: 14px;
+}
+
+.form__submit-button {
+  padding: 2px 10px;
+  font-weight: 400;
+  margin-top: 10px;
+}
+
+/* ------ Media Queries ------ */
+
+@media all and (max-width: 500px) {
+
+  .page-header {
+    display: block;
+    text-align: center;
+  }
+
+  .navigation-list li {
+    display: list-item;
+    text-align: center;
+    font-size: 14px;
+    padding: 3px;
+  }
+
+  .about-me__container {
+    max-width: 310px;
+  }
+
+  .projects__grid-container {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+  }
+}
+
+@media all and (min-width: 501px) and (max-width: 750px) {
+
+  .about-me__container {
+    max-width: 500px;
+  }
+
+  .projects__grid-container {
+    -ms-grid-columns: 1fr 10px 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+  }
+}
+
+@media all and (max-width: 750px) {
+  .profile__grid-container, .contact__grid-container {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+    max-width: 350px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .profile__portrait {
+    float: none;
+  }
+}
+
+@media all and (max-width: 810px) {
+  .page-header {
+    display: block;
+    text-align: center;
+  }
+
+  .navigation-list {
+    text-align: center;
+    font-size: 14px;
+  }
+}
