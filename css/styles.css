@@ -1,7 +1,7 @@
 /* ------ General rules ------ */
 
 :root {
-  --primary-bg-color:  #f2eeea;
+  --primary-bg-color: #f2eeea;
   --secondary-bg-color: white;
   --links-color: #5b7265;
   --links-hover-color: #353d39;
@@ -64,7 +64,7 @@ a:visited {
 
 a:hover {
   cursor: pointer;
-  color: var(--links-hover-color); 
+  color: var(--links-hover-color);
 }
 
 .button-container {
@@ -149,6 +149,7 @@ svg {
   from {
     transform: translate(-400px, 0px);
   }
+
   to {
     transform: translate(100px, 0px);
   }
@@ -162,6 +163,7 @@ svg {
   from {
     transform: translate(0, 0);
   }
+
   to {
     transform: translate(0px, -100px);
   }
@@ -192,9 +194,13 @@ svg {
   width: 50%;
 }
 
+.profile__grid-container:first-child {
+  width: fit-content;
+}
+
 .profile__portrait {
   float: left;
-  width: 250px; 
+  width: 250px;
   height: auto;
   border-radius: 50%;
   box-shadow: 5px 5px 8px rgba(92, 88, 86, 0.2);
@@ -209,10 +215,10 @@ svg {
     width: 80%;
   }
 
-  .profile__grid-item {
-    min-height: auto;
-    width: fit-content;
-  } 
+  .profile__grid-item:last-child {
+    padding-top: 40px;
+  }
+
 }
 
 /* ------ About ------ */
@@ -235,7 +241,8 @@ table {
   text-align: center;
 }
 
-th, td {
+th,
+td {
   height: 30px;
   padding: 0;
 }
@@ -252,6 +259,7 @@ th {
 .projects__grid-item {
   display: inline-block;
   width: 33%;
+  background-color: var(--secondary-bg-color);
 }
 
 @supports (display: grid) {
@@ -267,11 +275,12 @@ th {
     width: auto;
     min-height: auto;
     padding: 15px;
-  } 
+  }
 }
 
-.projects__grid-item h2 {
-  margin-top: 0;
+.projects__grid-item img {
+  width: 100%;
+  height: auto;
 }
 
 
@@ -292,17 +301,20 @@ th {
     max-width: 700px;
     margin: 0 auto;
   }
-  
+
   .contact__grid-item {
     min-width: 280px;
   }
 }
 
-label, input, textarea {
+label,
+input,
+textarea {
   margin-bottom: 10px;
 }
 
-input, textarea {
+input,
+textarea {
   border-width: 1px;
   border-radius: 5px;
   border-color: var(--primary-text-color);
@@ -327,7 +339,7 @@ form p {
 
 /* ------ Media Queries ------ */
 
-@media all and (max-width: 410px) { 
+@media all and (max-width: 410px) {
   .page-header__item:first-child {
     width: 350px;
     height: auto;
@@ -398,7 +410,9 @@ form p {
 }
 
 @media all and (max-width: 750px) {
-  .profile__grid-container, .contact__grid-container {
+
+  .profile__grid-container,
+  .contact__grid-container {
     grid-template-columns: 1fr;
     grid-gap: 10px;
     max-width: 350px;
