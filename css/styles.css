@@ -283,6 +283,16 @@ th {
   height: auto;
 }
 
+.chatterbox-images {
+  display: flex;
+  justify-content:center;
+}
+
+.chatterbox-images img {
+  width: 35%;
+  height: auto;
+  margin: 0;
+}
 
 /* ------ Contact ------ */
 

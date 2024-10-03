@@ -345,6 +345,20 @@ th {
   height: auto;
 }
 
+.chatterbox-images {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.chatterbox-images img {
+  width: 35%;
+  height: auto;
+  margin: 0;
+}
 
 /* ------ Contact ------ */
 
