@@ -5,52 +5,393 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Lena's Portfolio</title>
-    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="images/favicon-32x32-light.png" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,200;1,400;1,600&display=swap"
         rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rozha+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/normalization.css">
     <link rel="stylesheet" type="text/css" href="css/style.production.css">
 </head>
 
 <body>
     <header class="page-header">
-        <img class="page-header__item" src="images/header-logo.gif" alt="Lena Chatziastros Logo">
+        <img class="page-header__item" src="images/header-text-logo.gif" alt="Lena Chatziastros Logo">
         <nav class="page-header__item">
             <ul role="menubar" class="navigation-list">
                 <li role="presentation">
-                    <a href="index.html" role="menuitem">Home</a>
+                    <a href="#about" role="menuitem">Home</a>
                 </li>
                 <li role="presentation">
-                    <a href="about.html" role="menuitem">About Me</a>
+                    <a href="#experience" role="menuitem">About Me</a>
                 </li>
                 <li role="presentation">
-                    <a href="work.html" role="menuitem">My Work</a>
+                    <a href="#work" role="menuitem">My Work</a>
                 </li>
                 <li role="presentation">
-                    <a href="contact.html" role="menuitem">Contact</a>
+                    <a href="#contact" role="menuitem">Contact</a>
                 </li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <div class="profile__grid-container">
-            <div class="profile__grid-item">
-                <img class="profile__portrait" src="images/portrait.jpeg" alt="Lena Chatziastros Portrait">
-            </div>
-            <div class="profile__grid-item">
-                <h1>Hello World!</h1>
-                <p>My name is Lena Chatziastros.</p>
-                <p>I am a <span>web</span> developer from Germany.</p>
-                <button class="button-main"><a href="work.html">Check out my projects</a></button>
+        <div id="about">
+            <h1 class="bg-heading secondary-font">About</h1>
+
+            <div class="grid-container">
+                <img class="profile-pic" src="images/portrait-full.jpeg" alt="Lena Chatziastros Portrait">
+
+                <div class="text-content">
+                    <!-- <h1 class="secondary-font">Lena <br> Chatziastros</h1> -->
+
+                        <div class="about-framer">
+                            <span>ABOUT
+                                <hr class="inline-hr-primary">
+                            </span>
+                        </div>
+                        <p>
+                            Hey there! I'm a <span class="accent-font-color">Web Developer</span> from Germany.
+                            <br>
+                            <br>
+                            I have a background in physics, passionate about leveraging technology to drive solutions in sustainability and environmental impact.
+                            I believe in the power of empathy and seeing problems from multiple angles, which helps me understand diverse user needs and create 
+                            solutions that truly resonate with people.
+                            <br>
+                            <br>
+                            Currently, I am improving my Full-Stack Web Development skills at CareerFoundry.
+                            <br>
+                            <br>
+                            If I'm not in front of my computer, you will find me outdoors!
+                            <br>
+                            <br>
+                            <br>
+                            <button class="button-main"><a href="#contact">Contact Me !</a></button>
+                            <!-- <a href="https://www.linkedin.com/in/lena-chatziastros-311ab023b/" target="_blank">
+                                <img style="width: 30px; height: 30px;" src="images/linkedin-logo.svg" alt="LinkedIn">
+                            </a>
+                            <a href="https://www.instagram.com/lena_chatziastros/" target="_blank">
+                                <img style="width: 30px; height: 30px;" src="images/instagram-logo.svg" alt="Instagram">
+                            </a>
+                            <a href="https://x.com/Lenachatx">
+                                <img style="width: 30px; height: 30px;" src="images/twitter-logo.svg" alt="Twitter">
+                            </a>
+                            <a href="https://github.com/lenachat" target="_blank">
+                                <img style="width: 30px; height: 30px;" src="images/github-logo.svg" alt="GitHub">
+                            </a> -->
+                        </p>
+                </div>
             </div>
         </div>
+
+        <div id="experience">
+            <h1 class="bg-heading secondary-font">Experience</h1>
+            <p class="bg-sub-heading secondary-font">Skills</p>
+
+            <div class="experience__grid-container">
+                <div class="experience-framer">
+                    <span>EXPERIENCE
+                        <hr class="inline-hr-primary">
+                    </span>
+                </div>
+
+                <div class="experience__grid-item">
+                    <h2 class="secondary-font">My Background</h2>
+                    <p class="about-me__text">
+                        My journey into Web Development began while studying Physics, where I developed a strong foundation 
+                        in problem-solving and analytical thinking. Tackling complex challenges has always been a passion of mine, 
+                        which naturally led me to coding.  
+                        <br>
+                        What excites me most about web development is that it blends logical problem-solving with creativity and 
+                        craftsmanship, allowing me to build functional yet engaging applications. 
+                        <br>
+                        I'm eager to use these skills to develop innovative digital solutions that contribute to sustainability and 
+                        environmental initiatives, where technology can drive meaningful, real-world change.
+                    </p>
+
+                    <div class="grid-2x2">
+                        <div>
+                            <h3 class="accent-font-color">1 - Languages</h3>
+                            <ul>
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>JavaScript</li>
+                                <li>TypeScript</li>
+                                <li>Python</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="accent-font-color">2 - Libraries & Frameworks</h3>
+                            <ul>
+                                <li>React</li>
+                                <li>Angular</li>
+                                <li>Bootstrap</li>
+                                <li>Recharts</li>
+                                <li>Angular-Material</li>
+                                <li>jQuery</li>
+                                <li>Express</li>
+                                <li>NodeJS</li>
+                                <li>Serverless</li>
+                                <li>React Native</li>
+                                <li>Expo</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="grid-2x2">
+                        <div>
+                            <h3 class="accent-font-color">3 - Documenting & Testing</h3>
+                            <ul>
+                                <li>Postman</li>
+                                <li>Jest</li>
+                                <li>Cucumber</li>
+                                <li>Puppeteer</li>
+                                <li>JSDoc</li>
+                                <li>TypeDoc</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="accent-font-color">4 - Web Services & Databases</h3>
+                            <ul>
+                                <li>GitHub</li>
+                                <li>AWS</li>
+                                <li>MongoDB</li>
+                                <li>PostgreSQL</li>
+                                <li>Firebase</li>
+                                <li>Google Calendar API</li>
+                                <li>Render</li>
+                                <li>Netlify</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="experience__grid-item">
+                    <img src="images/laptop-photo.webp">
+                </div>
+            </div>
+        </div>
+
+        <div class="button-container">
+            <button class="button-main"><a href="ext-files/CV.pdf" target="_blank">Download CV</a></button>
+        </div>
+
+        <div id="work">
+            <h1 class="bg-heading-accent secondary-font">Projects</h1>
+            <p class="bg-sub-heading secondary-font">My Work</p>
+            <div class="projects__grid-container">
+                <div class="work-framer">
+                    <span>PORTFOLIO
+                        <hr class="inline-hr-primary">
+                    </span>
+                </div>
+                <div class="projects__grid-item">
+                    <div class="project-image-container">
+                        <img src="images/pokedex-img.png" alt="Pokedex App Image">
+
+                        <div class="project-title-container">
+                            <h3 class="secondary-font">Pokedex</h3>
+                        </div>
+                    </div>
+                    <div class="project-description-container">
+                        <p>
+                            An interactive JavaScript web application that showcases a list of Pokémon using data from
+                            an
+                            external API,
+                            styled with Bootstrap.
+                        </p>
+                        <a href="https://lenachat.github.io/Pokedex-application/" target="_blank">
+                            <div class="project-link">
+                                <hr class="inline-hr-accent">
+                                <span class="accent-font-color">See full project</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="projects__grid-item">
+                    <div class="project-image-container">
+                        <img src="images/moviemate-img.png" alt="MovieMate App Image">
+
+                        <div class="project-title-container">
+                            <h3 class="secondary-font">MovieMate</h3>
+                        </div>
+                    </div>
+
+                    <div class="project-description-container">
+                        <p>
+                            A full-stack web application, built using the MERN stack
+                            (MongoDB, Express, React, Node.js). The movie app allows users to explore information about
+                            various movies,
+                            create a list of favorite movies, and manage their profiles.
+                        </p>
+                        <a href="https://moviemate-online.netlify.app/" target="_blank">
+                            <div class="project-link">
+                                <hr class="inline-hr-accent">
+                                <span class="accent-font-color">See full project</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="projects__grid-item">
+
+                    <div class="project-image-container">
+                        <img src="images/rock-paper-scissors-img.png" alt="Rock Paper Scissors App Image">
+
+                        <div class="project-title-container">
+                            <h3 class="secondary-font">Rock Paper <br> Scissors</h3>
+                        </div>
+                    </div>
+                    <div class="project-description-container">
+                        <p>
+                            An interactive JavaScript web application that lets users play the classic Rock Paper
+                            Scissors
+                            game
+                            against the computer, featuring dynamic visuals and real-time score tracking.
+                        </p>
+                        <a href="https://lenachat.github.io/rock-paper-scissors-game" target="_blank">
+                            <div class="project-link">
+                                <hr class="inline-hr-accent">
+                                <span class="accent-font-color">See full project</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="projects__grid-item">
+                    <div class="project-image-container">
+
+                        <img src="images/eventory-img.png" alt="Eventory App Image">
+
+                        <div class="project-title-container">
+                            <h3 class="secondary-font">Eventory</h3>
+                        </div>
+                    </div>
+
+                    <div class="project-description-container">
+                        <p>
+                            Eventory is a serverless progressive web application built with React, featuring test-driven
+                            development.
+                            It utilizes the Google Calendar API to display upcoming events in various cities, offering
+                            offline
+                            functionality,
+                            data visualization, and a responsive, cross-platform user experience.
+                        </p>
+                        <a href="https://lenachat.github.io/Eventory" target="_blank">
+                            <div class="project-link">
+                                <hr class="inline-hr-accent">
+                                <span class="accent-font-color">See full project</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="projects__grid-item">
+                    <div class="project-image-container">
+
+                        <div class="chatterbox-images">
+                            <img src="images/chatterbox-img1.png" alt="ChatterBox App Image">
+                            <img src="images/chatterbox-img2.png" alt="ChatterBox App Image">
+                        </div>
+
+                        <div class="project-title-container">
+                            <h3 class="secondary-font">ChatterBox</h3>
+                        </div>
+                    </div>
+
+
+                    <div class="project-description-container">
+                        <p>
+                            ChatterBox is a mobile chat app built with React Native and Expo,
+                            allowing users to exchange messages, share images, and send their location in real-time.
+                            The app integrates Firebase for anonymous authentication, real-time data storage,
+                            and offline message access to ensure a seamless chatting experience.
+                        </p>
+                        <a href="https://github.com/lenachat/chatterBox">
+                            <div class="project-link">
+                                <hr class="inline-hr-accent">
+                                <span class="accent-font-color">See full project</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <!-- <div class="projects__grid-item">
+                    <h2>MyFlix</h2>
+                    <p>Project description</p>
+                    <a href="#">See full project</a>
+                </div> -->
+                <!-- <div class="button-container">
+                    <button class="button-main"><a href="contact.html">Contact me</a></button>
+                </div> -->
+            </div>
+        </div>
+
+        <div id="contact">
+                <h1 class="bg-heading secondary-font">Contact</h1>
+                <p class="bg-sub-heading secondary-font">Let's Talk</p>
+
+                <div class="contact__grid-container">
+
+                    <div class="contact-framer">
+                        <span>GET IN TOUCH
+                            <hr class="inline-hr-primary">
+                        </span>
+                    </div>
+
+                    <div class="contact__grid-item">
+                        <div>
+                            <h1 class="secondary-font">Contact information</h1>
+                            Pop me a message if you are interested <br> in working together or just want to say hi!
+                        <br>
+                        <br>
+                        <br>
+                        <a class="email-link" href="mailto:abc@xyz.com"><span>E-mail: abc(at)xyz(dot)com</span></a>
+                        <br>
+                        <br>
+                        <div class="social-media-links">
+                            <a href="https://www.linkedin.com/in/lena-chatziastros-311ab023b/" target="_blank">
+                                <img style="width: 30px; height: 30px;" src="images/linkedin-logo.svg" alt="LinkedIn">
+                            </a>
+                            <a href="https://www.instagram.com/lena_chatziastros/" target="_blank">
+                                <img style="width: 30px; height: 30px;" src="images/instagram-logo.svg" alt="Instagram">
+                            </a>
+                            <a href="https://x.com/Lenachatx">
+                                <img style="width: 30px; height: 30px;" src="images/twitter-logo.svg" alt="Twitter">
+                            </a>
+                            <a href="https://github.com/lenachat" target="_blank">
+                                <img style="width: 30px; height: 30px;" src="images/github-logo.svg" alt="GitHub">
+                            </a>
+                        </div>
+                        </div>
+                    </div>
+
+                    <div class="contact__grid-item">
+                        <h1 class="secondary-font">Leave a message</h1>
+                        <form action="" method="post" id="contact-form">
+                            <label for="contact-name" class="form__standard-label">Name*:</label>
+                            <br>
+                            <input type="text" id="contact-name" required>
+                            <br>
+                            <label for="contact-email" class="form__standard-label">E-mail*:</label>
+                            <br>
+                            <input type="email" id="contact-email" required>
+                            <br>
+                            <label for="contact-phone" class="form__standard-label">Phone number:</label>
+                            <br>
+                            <input type="tel" id="contact-phone">
+                            <br>
+                            <label for="contact-message" class="form__standard-label">Message*:</label>
+                            <br>
+                            <textarea maxlength="250" id="contact-message" rows="3" required></textarea>
+                            <br>
+                            <input type="submit" value="Send message" class="button-main">
+                            <p>*Required input field</p>
+                        </form>
+                    </div>
+                </div>
+            </div>
     </main>
 
-    <footer class="page-footer">
+    <!-- <footer class="page-footer">
         <p>Find me on</p>
         <div class="page-footer__social-media-links">
             <a href="https://www.linkedin.com/in/lena-chatziastros-311ab023b/" target="_blank">
@@ -63,7 +404,7 @@
                 <img style="width: 40px; height: 40px;" src="images/github-logo.svg" alt="GitHub">
             </a>
         </div>
-    </footer>
+    </footer> -->
 </body>
 
 </html>
