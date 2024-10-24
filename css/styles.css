@@ -565,7 +565,6 @@ form p {
   color: var(--primary-text-color);
 }
 
-
 /* ------ Media Queries ------ */
 
 @media all and (max-width: 355px) {

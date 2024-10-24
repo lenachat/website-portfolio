@@ -1,0 +1,392 @@
+:root {
+  /* --primary-bg-color: #f2eeea;
+  --secondary-bg-color: white;
+  --links-color: #5b7265;
+  --links-hover-color: #353d39; */
+
+  --primary-bg-color: #f1eeec;
+  --secondary-bg-color: white;
+
+  --primary-text-color: #373535;
+
+  --accent-color: #F08718;
+
+  --font-size-default: 16px;
+
+  --font-size-h1: 28px;
+  --font-size-h2: 24px;
+  --font-size-h3: 21px;
+  --font-size-h4: 18px;
+
+  --font-size-small: 14px;
+
+  --font-weight-primary: 200;
+  --font-weight-secondary: 400;
+  --font-weight-tertiary: 300;
+}
+
+body {
+  color: var(--primary-text-color);
+  background-color: var(--secondary-bg-color);
+  font-family: "Kanit", sans-serif;
+  font-weight: var(--font-weight-primary);
+  font-style: normal;
+  margin: 15px 0;
+  font-size: var(--font-size-default);
+  line-height: 1.2em;
+}
+
+h1 {
+  font-weight: var(--font-weight-primary);
+  font-size: var(--font-size-h1);
+}
+
+h2 {
+  font-weight: var(--font-weight-primary);
+  font-size: var(--font-size-h2);
+}
+
+h3 {
+  font-weight: var(--font-weight-primary);
+  font-size: var(--font-size-h3);
+}
+
+a {
+  text-decoration: none;
+  color: var(--links-color);
+  font-weight: bolder;
+}
+
+a:visited {
+  color: var(--links-color);
+}
+
+a:hover {
+  cursor: pointer;
+  color: var(--links-hover-color);
+}
+
+.button-container {
+  text-align: center;
+  margin: 30px 0 20px 0;
+}
+
+.button-main {
+  background-color: white;
+  border-radius: 10px;
+  border-width: 2px;
+  border-style: solid;
+  border-color: var(--accent-color);
+  padding: 5px 12px;
+  transition: all 0.3s ease;
+  font-size: var(--font-size-h4);
+  font-family: 'Rozha One', serif;
+  color: #373535;
+}
+
+.button-main:hover {
+  background-color: var(--secondary-bg-color);
+  cursor: pointer;
+  scale: 1.1;
+}
+
+.accent-font-color {
+  color: var(--accent-color);
+}
+
+
+/* ------ Header ------ */
+
+.page-header {
+  display: flex;
+  padding: 20px;
+}
+
+.page-header__item {
+  flex: 0 1 200px;
+}
+
+.page-header__item:first-child {
+  width: auto;
+  height: 40px;
+}
+
+.page-header__item:last-child {
+  flex-grow: 1;
+  text-align: right;
+}
+
+.navigation-list {
+  list-style-type: none;
+  padding: 0 10px 0 0;
+
+}
+
+.navigation-list li {
+  display: inline-block;
+  margin-left: 20px;
+  transition: all 0.5s ease;
+}
+
+.navigation-list li a {
+  font-size: var(--font-size-h4);
+  font-weight: var(--font-weight-tertiary);
+}
+
+.navigation-list li:hover {
+  transform: scale(1.1);
+}
+
+/* ------ Main ------ */
+
+main {
+  padding: 20px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+svg {
+  width: 40%;
+  height: auto;
+  margin-left: 30%;
+  border-radius: 10%;
+  margin-top: 20px;
+}
+
+.bg-heading {
+  font-size: 8rem;
+  margin: 0;
+  color: var(--primary-bg-color);
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  letter-spacing: 0.01em;
+  font-family: "Rozha One", serif;
+}
+
+.bg-sub-heading {
+  font-size: 1.5rem;
+  margin: 0;
+  color: var(--primary-text-color);
+  opacity: 1;
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  letter-spacing: 0.01em;
+  font-family: "Rozha One", serif;
+}
+
+/* ------ MovieMate ------- */
+
+.intro-container {
+  position: relative;
+}
+
+.intro-text-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.tools-container {
+  padding-top: 100px;
+  padding-bottom: 30px;
+  color: var(--accent-color);
+  text-align: center;
+}
+
+.tools-container span {
+  background-color: var(--accent-color);
+  color: white;
+  padding: 7px;
+  border-radius: 15px;
+  line-height: 3em;
+  font-size: small;
+}
+
+.bg-heading-intro {
+  top: 30px;
+}
+
+.video-container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+video {
+  width: 100%;
+  height: auto;
+}
+
+.main-container {
+  position: relative;
+  margin-top: 130px;
+}
+
+.main-grid-container {
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+  padding-top: 80px;
+}
+
+.main-grid-container h2 {
+  font-family: "Rozha One", serif;
+}
+
+.image-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin: 50px 0;
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.conclusion-container {
+  position: relative;
+  width: 80%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 0.3fr 0.7fr;
+  gap: 20px;
+  padding-top: 80px;
+}
+
+.bg-heading-conclusion {
+  top: 100px;
+}
+
+.bg-sub-heading-conclusion {
+  top: 120px;
+}
+
+
+.conclusion-text-container {
+  padding-top: 80px;
+}
+
+.conclusion-img-container {
+  z-index: 10;
+  text-align: center;
+}
+
+.conclusion-img-container img {
+  width: 80%;
+  height: auto;
+  border-radius: 13%;
+}
+
+/** ------ Media Queries ------ */
+
+@media all and (max-width: 800px) {
+  h1 {
+    font-size: 1.5em;
+  }
+
+  .page-header {
+    display: block;
+    text-align: center;
+  }
+
+  .navigation-list {
+    text-align: center;
+    font-size: var(--font-size-small);
+  }
+
+  .bg-heading {
+    font-size: 5rem;
+  }
+
+  .intro-text-container {
+    display: block;
+  }
+
+  .main-grid-container {
+    display: block;
+  }
+
+  .image-container {
+    display: block;
+
+  }
+
+  .image-container img {
+    margin: 5px;
+  }
+
+  .conclusion-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin: 0;
+    width: 100%;
+    padding-top: 50px;
+  }
+
+  .conclusion-img-container {
+    padding-top: 50px;
+  }
+
+  .bg-heading-conclusion {
+    top: 50px;
+  }
+
+  .bg-sub-heading-conclusion {
+    top: 65px;
+  }
+
+}
+
+@media all and (max-width: 480px) {
+
+  img.page-header__item {
+    transform: scale(0.8);
+  }
+
+  .navigation-list {
+    text-align: center;
+    font-size: var(--font-size-small);
+  }
+
+  .bg-heading {
+    font-size: 4rem;
+  }
+
+  .bg-heading-main {
+    top: 10px;
+  }
+
+  main {
+    width: 90%;
+  }
+
+  .tools-container {
+    padding-top: 70px;
+    padding-bottom: 10px;
+  }
+
+  .main-container {
+    margin-top: 60px;
+  }
+
+  .main-grid-container {
+    padding-top: 50px;
+  }
+
+  .conclusion-container {
+    display: block;
+  }
+
+  .conclusion-text-container {
+    padding-top: 30px;
+  }
+}

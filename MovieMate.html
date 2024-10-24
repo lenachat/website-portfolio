@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Lena's Portfolio</title>
+    <link rel="shortcut icon" href="images/favicon-32x32-light.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,200;1,400;1,600&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rozha+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/normalization.css">
+    <link rel="stylesheet" type="text/css" href="css/userstory.css">
+</head>
+
+<body>
+    <header class="page-header">
+        <img class="page-header__item" src="images/header-text-logo.gif" alt="Lena Chatziastros Logo">
+        <nav class="page-header__item">
+            <ul role="menubar" class="navigation-list">
+                <li role="presentation">
+                    <a href="index.html#about" role="menuitem">About</a>
+                </li>
+                <li role="presentation">
+                    <a href="index.html#experience" role="menuitem">Experience</a>
+                </li>
+                <li role="presentation">
+                    <a href="index.html#work" role="menuitem">Projects</a>
+                </li>
+                <li role="presentation">
+                    <a href="index.html#contact" role="menuitem">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="intro-container">
+            <h1 class="bg-heading bg-heading-intro">MovieMate</h1>
+            <div class="tools-container">
+                Node.js | Express | MongoDB | Mongoose | JWT authentication | REST API | React | React Router |
+                Bootstrap | Postman | Parcel | Render
+            </div>
+            <div class="intro-text-container">
+                <div>
+                    <p>
+                        <strong>MovieMate</strong> is a full-stack web application designed for movie enthusiasts to
+                        explore
+                        and
+                        manage
+                        their favorite films. The project aimed to build both the server-side and client-side components
+                        of the application, providing users with a seamless experience to access, save, and curate lists
+                        of movies based on various attributes such as genre, director, and individual preferences.
+                    </p>
+                    <p>
+                        <strong>Goal:</strong> The primary goal was to create a user-friendly platform where users can
+                        interact with a dynamic movie database, register for personalized accounts, and save favorite
+                        movies.
+                    </p>
+                    <p>
+                        <strong>My Role:</strong> I acted as the sole developer, taking charge of both backend and
+                        frontend
+                        development,
+                        as well as managing the database. I used my full-stack JavaScript skills to build the API,
+                        design
+                        the user interface, and ensure smooth communication between the client and the server.
+                    </p>
+                </div>
+                <div class="video-container">
+                    <video controls>
+                        <source src="images/moviemate-userstory-video.MOV">
+                    </video>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="main-container">
+            <h1 class="bg-heading bg-heading-main">Approach</h1>
+            <p class="bg-sub-heading">Process</p>
+            <div class="main-grid-container">
+                <div>
+                    <h2>
+                        Backend Development
+                    </h2>
+                    <p>
+                        The foundation of MovieMate's backend was built using
+                        Node.js and Express,
+                        where I designed a RESTful API to interact with a MongoDB database. This API provided endpoints
+                        to
+                        handle CRUD operations, including retrieving movies, registering users, and managing favorite
+                        lists.
+                        <br>
+                        Setting up proper authentication using JWT, was initially challenging. Integrating secure
+                        token-based
+                        authentication was tricky due to session management across multiple
+                        views, but I was able to resolve it through careful middleware configuration. <br>
+                    </p>
+                </div>
+
+                <div>
+                    <h2>
+                        Frontend Development
+                    </h2>
+                    <p>
+                        The client-side was developed using React to create a single-page application (SPA).
+                        The application was structured into multiple views for
+                        logging in, signing up, viewing a list of movies and movie details, and managing profiles.
+                        Different
+                        views are divided into
+                        reusable components, to allow for better maintainability. <br>
+                        One key challenge was managing state across different views, especially
+                        when handling
+                        user login and dynamic movie lists. To solve this, I used React Router for seamless page
+                        transitions. To
+                        ensure the state of favorites is properly synchronized across multiple views I created a custom
+                        hook
+                        and global states. <br>
+                    </p>
+                </div>
+
+                <div>
+                    <h2>Database and Business Logic</h2>
+                    <p>
+                        MongoDB served as the NoSQL database, where I designed the schema
+                        to handle movie
+                        information and user data. I used Mongoose
+                        models to simplify queries and validations. During database setup, data validation was crucial
+                        to
+                        ensure that only
+                        correct information was saved.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="image-container">
+            <img src="images/moviemate-userstory-11.png" alt="">
+            <img src="images/moviemate-userstory-10.png" alt="">
+        </div>
+
+        <div class="conclusion-container">
+            <h1 class="bg-heading bg-heading-conclusion">Results</h1>
+            <p class="bg-sub-heading bg-sub-heading-conclusion">Conclusion</p>
+            <div class="conclusion-img-container">
+                <img src="images/moviemate-userstory-phone.png" alt="">
+            </div>
+            <div class="conclusion-text-container">
+                <p>
+                    The end result was a responsive and fully functional web application that met the original
+                    objectives. <br>
+                    <br>
+                    The initial problem of providing movie enthusiasts with a platform to
+                    discover and manage movie information was successfully solved with MovieMate. The final product
+                    matched
+                    the
+                    original vision, though I encountered challenges along the way, especially with user authentication
+                    and state management. These challenges taught me valuable lessons in debugging complex
+                    authentication
+                    flows
+                    and managing state in React apps. <br>
+                    <br>
+                    I am most proud of the app’s intuitive design and its ability to provide users with a seamless
+                    experience across different devices. I hope users feel empowered to discover new films, save their
+                    favorites, and share their recommendations.
+                </p>
+            </div>
+        </div>
+    </main>
+
+</body>
+
+</html>
