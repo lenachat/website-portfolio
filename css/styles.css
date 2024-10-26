@@ -387,10 +387,6 @@ p {
 }
 
 .projects__grid-container {
-  /* display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 20px;
-  margin: 0; */
   align-items: center;
   justify-content: center;
   width: 80%;
@@ -419,6 +415,7 @@ p {
 .projects__grid-item:hover {
   box-shadow: 5px 5px 8px 5px rgba(92, 88, 86, 0.2);
   transition: all 0.3s ease-in;
+  cursor: pointer;
 }
 
 .projects__grid-item img {
