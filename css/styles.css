@@ -343,8 +343,6 @@ p {
   text-align: justify;
 }
 
-/* ------ Toolbelt ------ */
-
 
 /* ------ Work ------ */
 
@@ -410,6 +408,7 @@ p {
   border: #e1e0e0 solid 0px;
   background-color: white;
   box-shadow: 5px 5px 8px rgba(92, 88, 86, 0);
+  border-radius: 15px;
 }
 
 .projects__grid-item:hover {
@@ -541,7 +540,7 @@ textarea {
   border-radius: 5px;
   border-color: var(--primary-text-color);
   background-color: white;
-  width: 200px;
+  width: 250px;
 }
 
 input {
@@ -550,13 +549,26 @@ input {
 
 form p {
   margin-top: 0;
-  font-size: var(--font-size-small);
+  font-size: small;
+  padding: 0;
+  text-align: left;
+}
+
+#contact-form input,
+textarea {
+  border: var(--primary-bg-color) solid 1.5px;
+}
+
+#contact-form input:focus,
+textarea:focus {
+  border: var(--accent-color) solid 1.5px;
 }
 
 #contact-form .button-main {
-  background-color: rgb(244, 244, 244);
-  margin-top: 10px;
   color: var(--primary-text-color);
+  border-color: var(--accent-color);
+  text-align: center;
+  border-width: 2px;
 }
 
 /* ------ Media Queries ------ */

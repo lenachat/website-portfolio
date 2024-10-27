@@ -56,8 +56,9 @@
                         Hey there! I'm a <span class="accent-font-color">Web Developer</span> from Germany.
                         <br>
                         <br>
-                        I have a background in physics, passionate about leveraging technology to drive solutions in
-                        sustainability and environmental impact.
+                        I am passionate about leveraging technology to drive solutions in
+                        sustainability and environmental impact. <br>
+                        <br>
                         I believe in the power of empathy and seeing problems from multiple angles, which helps me
                         understand diverse user needs and create
                         solutions that truly resonate with people.
@@ -70,7 +71,7 @@
                         <br>
                         <br>
                         <br>
-                        <button class="button-main"><a href="#contact">Contact Me !</a></button>
+                        <button class="button-main"><a href="#contact">Get in Touch</a></button>
                     </p>
                 </div>
             </div>
@@ -168,10 +169,6 @@
             </div>
         </div>
 
-        <!-- <div class="button-container">
-            <button class="button-main"><a href="ext-files/CV.pdf" target="_blank">Download CV</a></button>
-        </div> -->
-
         <div id="work">
             <h1 class="bg-heading-accent secondary-font">Projects</h1>
             <p class="bg-sub-heading secondary-font">My Work</p>
@@ -191,6 +188,10 @@
                             about
                             various movies,
                             create a list of favorite movies, and manage their profiles.
+                            <br>
+                            <a href="MovieMate.html">
+                                <p>> More details</p>
+                            </a>
                         </p>
 
                         <a href="https://moviemate-online.netlify.app/" target="_blank">
@@ -216,8 +217,7 @@
                             A single-page movie app built with <strong>Angular</strong>, offering users an
                             interactive platform to explore movie details, directors, and genres.
                             This project features a responsive UI designed with <strong>Angular-Material</strong>
-                            and includes comprehensive documentation created using <strong>TypeDoc</strong>,
-                            with data handled through a <strong>RESTful API</strong> and user profile management.
+                            and includes comprehensive documentation created using <strong>TypeDoc</strong>.
                         </p>
 
                         <a href="https://lenachat.github.io/myFlix-Angular-client" target="_blank">
@@ -325,9 +325,6 @@
                         </a>
                     </div>
                 </div>
-
-
-
             </div>
         </div>
 
@@ -372,21 +369,21 @@
 
                 <div class="contact__grid-item">
                     <h1 class="secondary-font">Leave a message</h1>
-                    <form action="" method="post" id="contact-form">
-                        <label for="contact-name" class="form__standard-label">Name*:</label>
+                    <form action="https://api.web3forms.com/submit" method="POST" id="contact-form">
+                        <input type="hidden" name="access_key" value="cf08c221-5252-41a1-9da9-df7a9e46465e">
+                        <label for="contact-name" class="form__standard-label">Name:</label>
                         <br>
-                        <input type="text" id="contact-name" required>
+                        <input type="text" name="name" id="contact-name">
                         <br>
                         <label for="contact-email" class="form__standard-label">E-mail*:</label>
                         <br>
-                        <input type="email" id="contact-email" required>
+                        <input type="email" name="email" id="contact-email" required>
                         <br>
                         <label for="contact-message" class="form__standard-label">Message*:</label>
                         <br>
-                        <textarea maxlength="250" id="contact-message" rows="3" required></textarea>
-                        <br>
-                        <input type="submit" value="Send message" class="button-main">
+                        <textarea maxlength="500" name="message" id="contact-message" rows="4" required></textarea>
                         <p>*Required input field</p>
+                        <input type="submit" name="submit" value="Send message" class="button-main">
                     </form>
                 </div>
             </div>
