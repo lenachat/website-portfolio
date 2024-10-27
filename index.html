@@ -17,9 +17,9 @@
 </head>
 
 <body>
-    <header class="page-header">
-        <img class="page-header__item" src="images/header-text-logo.gif" alt="Lena Chatziastros Logo">
-        <nav class="page-header__item">
+    <header>
+        <img class="header-item" src="images/header-text-logo.gif" alt="Lena Chatziastros Logo">
+        <nav class="header-item">
             <ul role="menubar" class="navigation-list">
                 <li role="presentation">
                     <a href="#about" role="menuitem">About</a>
@@ -39,58 +39,50 @@
 
     <main>
         <div id="about">
-            <h1 class="bg-heading secondary-font">About</h1>
-
-            <div class="grid-container">
-                <img class="profile-pic" src="images/portrait-full.jpeg" alt="Lena Chatziastros Portrait">
-
-                <div class="text-content">
-                    <!-- <h1 class="secondary-font">Lena <br> Chatziastros</h1> -->
-
-                    <div class="about-framer">
+            <h1 class="bg-heading">About</h1>
+            <div class="about__grid-container">
+                <img class="about__picture" src="images/portrait-full.jpeg" alt="Lena Chatziastros Portrait">
+                <div class="about__text-container">
+                    <h1>Hey there!</h1>
+                    <div class="about__vertical-lettering">
                         <span>ABOUT
-                            <hr class="inline-hr-primary">
+                            <hr class="hr-primary">
                         </span>
                     </div>
                     <p>
-                        Hey there! I'm a <span class="accent-font-color">Web Developer</span> from Germany.
-                        <br>
+                        My name is Lena Chatziastros. I'm a <span class="accent-font-color">Web Developer</span> from
+                        Germany.
                         <br>
                         I am passionate about leveraging technology to drive solutions in
-                        sustainability and environmental impact. <br>
+                        sustainability and environmental impact.
                         <br>
                         I believe in the power of empathy and seeing problems from multiple angles, which helps me
                         understand diverse user needs and create
                         solutions that truly resonate with people.
                         <br>
-                        <br>
                         Currently, I am improving my Full-Stack Web Development skills at CareerFoundry.
                         <br>
-                        <br>
                         If I'm not in front of my computer, you will find me outdoors!
-                        <br>
-                        <br>
-                        <br>
-                        <button class="button-main"><a href="#contact">Get in Touch</a></button>
                     </p>
+                    <button class="button-main"><a href="#contact">Get in Touch</a></button>
                 </div>
             </div>
         </div>
 
         <div id="experience">
-            <h1 class="bg-heading secondary-font">Experience</h1>
-            <p class="bg-sub-heading secondary-font">Skills</p>
+            <h1 class="bg-heading">Experience</h1>
+            <h2 class="bg-sub-heading">Skills</h2>
 
             <div class="experience__grid-container">
-                <div class="experience-framer">
+                <div class="experience__vertical-lettering">
                     <span>EXPERIENCE
-                        <hr class="inline-hr-primary">
+                        <hr class="hr-primary">
                     </span>
                 </div>
 
-                <div class="experience__grid-item">
-                    <h2 class="secondary-font">My Background</h2>
-                    <p class="about-me__text">
+                <div class="experience__text-container">
+                    <h2>My Background</h2>
+                    <p>
                         My journey into Web Development began while studying Physics, where I developed a strong
                         foundation
                         in problem-solving and analytical thinking. Tackling complex challenges has always been a
@@ -106,9 +98,9 @@
                         environmental initiatives, where technology can drive meaningful, real-world change.
                     </p>
 
-                    <div class="grid-2x2">
+                    <div class="experience__skills-grid">
                         <div>
-                            <h3 class="accent-font-color">1 - Languages</h3>
+                            <p>1 - Languages</p>
                             <ul>
                                 <li>HTML</li>
                                 <li>CSS</li>
@@ -118,7 +110,7 @@
                             </ul>
                         </div>
                         <div>
-                            <h3 class="accent-font-color">2 - Libraries & Frameworks</h3>
+                            <p>2 - Libraries &amp; Frameworks</p>
                             <ul>
                                 <li>React</li>
                                 <li>Angular</li>
@@ -133,11 +125,8 @@
                                 <li>Expo</li>
                             </ul>
                         </div>
-                    </div>
-
-                    <div class="grid-2x2">
                         <div>
-                            <h3 class="accent-font-color">3 - Documenting & Testing</h3>
+                            <p>3 - Documenting &amp; Testing</p>
                             <ul>
                                 <li>Postman</li>
                                 <li>Jest</li>
@@ -148,7 +137,7 @@
                             </ul>
                         </div>
                         <div>
-                            <h3 class="accent-font-color">4 - Web Services & Databases</h3>
+                            <p>4 - Web Services &amp; Databases</p>
                             <ul>
                                 <li>GitHub</li>
                                 <li>AWS</li>
@@ -161,27 +150,24 @@
                             </ul>
                         </div>
                     </div>
-
                 </div>
-                <div class="experience__grid-item">
-                    <img src="images/laptop-photo.webp">
-                </div>
+                <img class="experience__picture" src="images/laptop-photo.webp">
             </div>
         </div>
 
-        <div id="work">
-            <h1 class="bg-heading-accent secondary-font">Projects</h1>
-            <p class="bg-sub-heading secondary-font">My Work</p>
+        <div id="projects">
+            <h1 class="bg-heading">Projects</h1>
+            <h2 class="bg-sub-heading">My Work</h2>
             <div class="projects__grid-container">
-                <div class="work-framer">
+                <div class="projects__vertical-lettering">
                     <span>PORTFOLIO
-                        <hr class="inline-hr-primary">
+                        <hr class="hr-primary">
                     </span>
                 </div>
 
                 <div class="projects__grid-item">
-                    <div class="project-description-container">
-                        <h3 class="secondary-font">MovieMate</h3>
+                    <div class="projects__description-container">
+                        <h2>MovieMate</h2>
                         <p onclick="window.location.href='MovieMate.html'">
                             A full-stack web application, built using the <strong>MERN</strong> stack
                             (MongoDB, Express, React, Node.js). The movie app allows users to explore information
@@ -195,24 +181,24 @@
                         </p>
 
                         <a href="https://moviemate-online.netlify.app/" target="_blank">
-                            <div class="project-link">
-                                <hr class="inline-hr-accent">
+                            <div class="projects__live-link">
+                                <hr class="hr-accent">
                                 <span class="accent-font-color">See live project</span>
                             </div>
                         </a>
                     </div>
 
-                    <div class="project-image-container" onclick="window.location.href='MovieMate.html'">
+                    <div class="projects__image-container" onclick="window.location.href='MovieMate.html'">
                         <img src="images/moviemate-img.png" alt="MovieMate App Image">
                     </div>
                 </div>
 
                 <div class="projects__grid-item">
-                    <div class="project-image-container">
+                    <div class="projects__image-container">
                         <img src="images/myflix-img.png" alt="MyFlix App Image">
                     </div>
-                    <div class="project-description-container">
-                        <h3 class="secondary-font">MyFlix</h3>
+                    <div class="projects__description-container">
+                        <h2>MyFlix</h2>
                         <p>
                             A single-page movie app built with <strong>Angular</strong>, offering users an
                             interactive platform to explore movie details, directors, and genres.
@@ -221,8 +207,8 @@
                         </p>
 
                         <a href="https://lenachat.github.io/myFlix-Angular-client" target="_blank">
-                            <div class="project-link">
-                                <hr class="inline-hr-accent">
+                            <div class="projects__live-link">
+                                <hr class="hr-accent">
                                 <span class="accent-font-color">See live project</span>
                             </div>
                         </a>
@@ -230,8 +216,8 @@
                 </div>
 
                 <div class="projects__grid-item">
-                    <div class="project-description-container">
-                        <h3 class="secondary-font">Eventory</h3>
+                    <div class="projects__description-container">
+                        <h2>Eventory</h2>
                         <p>
                             A <strong>serverless</strong> progressive web application built with <strong>React</strong>,
                             featuring <strong>test-driven</strong>
@@ -243,26 +229,26 @@
                         </p>
 
                         <a href="https://lenachat.github.io/Eventory" target="_blank">
-                            <div class="project-link">
-                                <hr class="inline-hr-accent">
+                            <div class="projects__live-link">
+                                <hr class="hr-accent">
                                 <span class="accent-font-color">See live project</span>
                             </div>
                         </a>
                     </div>
-                    <div class="project-image-container">
+                    <div class="projects__image-container">
                         <img src="images/eventory-img.png" alt="Eventory App Image">
                     </div>
                 </div>
 
                 <div class="projects__grid-item">
-                    <div class="project-image-container">
+                    <div class="projects__image-container">
                         <div class="chatterbox-images">
                             <img src="images/chatterbox-img1.png" alt="ChatterBox App Image">
                             <img src="images/chatterbox-img2.png" alt="ChatterBox App Image">
                         </div>
                     </div>
-                    <div class="project-description-container">
-                        <h3 class="secondary-font">ChatterBox</h3>
+                    <div class="projects__description-container">
+                        <h2>ChatterBox</h2>
                         <p>
                             A mobile chat app built with <strong>React Native</strong> and <strong>Expo</strong>,
                             allowing users to exchange messages, share images, and send their location in real-time.
@@ -271,8 +257,8 @@
                             and offline message access to ensure a seamless chatting experience.
                         </p>
                         <a href="https://github.com/lenachat/chatterBox">
-                            <div class="project-link">
-                                <hr class="inline-hr-accent">
+                            <div class="projects__live-link">
+                                <hr class="hr-accent">
                                 <span class="accent-font-color">See live project</span>
                             </div>
                         </a>
@@ -280,8 +266,8 @@
                 </div>
 
                 <div class="projects__grid-item">
-                    <div class="project-description-container">
-                        <h3 class="secondary-font">Pokedex</h3>
+                    <div class="projects__description-container">
+                        <h2>Pokedex</h2>
                         <p>
                             An interactive <strong>JavaScript</strong> web application that showcases a list of Pokémon
                             using data
@@ -292,23 +278,23 @@
                         </p>
 
                         <a href="https://lenachat.github.io/Pokedex-application/" target="_blank">
-                            <div class="project-link">
-                                <hr class="inline-hr-accent">
+                            <div class="projects__live-link">
+                                <hr class="hr-accent">
                                 <span class="accent-font-color">See live project</span>
                             </div>
                         </a>
                     </div>
-                    <div class="project-image-container">
+                    <div class="projects__image-container">
                         <img src="images/pokedex-img.png" alt="Pokedex App Image">
                     </div>
                 </div>
 
                 <div class="projects__grid-item">
-                    <div class="project-image-container">
+                    <div class="projects__image-container">
                         <img src="images/rock-paper-scissors-img.png" alt="Rock Paper Scissors App Image">
                     </div>
-                    <div class="project-description-container">
-                        <h3 class="secondary-font">Rock Paper Scissors</h3>
+                    <div class="projects__description-container">
+                        <h2>Rock Paper Scissors</h2>
                         <p>
                             An interactive <strong>JavaScript</strong> web application that lets users play the classic
                             Rock Paper
@@ -318,8 +304,8 @@
                         </p>
 
                         <a href="https://lenachat.github.io/rock-paper-scissors-game" target="_blank">
-                            <div class="project-link">
-                                <hr class="inline-hr-accent">
+                            <div class="projects__live-link">
+                                <hr class="hr-accent">
                                 <span class="accent-font-color">See live project</span>
                             </div>
                         </a>
@@ -329,20 +315,17 @@
         </div>
 
         <div id="contact">
-            <h1 class="bg-heading secondary-font">Contact</h1>
-            <p class="bg-sub-heading secondary-font">Let's Talk</p>
-
+            <h1 class="bg-heading">Contact</h1>
+            <h2 class="bg-sub-heading">Let's Talk</h2>
             <div class="contact__grid-container">
-
-                <div class="contact-framer">
+                <div class="contact__vertical-lettering">
                     <span>GET IN TOUCH
-                        <hr class="inline-hr-primary">
+                        <hr class="hr-primary">
                     </span>
                 </div>
-
                 <div class="contact__grid-item">
                     <div>
-                        <h1 class="secondary-font">Contact information</h1>
+                        <h1>Contact information</h1>
                         Pop me a message if you are interested <br> in working together or just want to say hi!
                         <br>
                         <br>
@@ -368,7 +351,7 @@
                 </div>
 
                 <div class="contact__grid-item">
-                    <h1 class="secondary-font">Leave a message</h1>
+                    <h1>Leave a message</h1>
                     <form action="https://api.web3forms.com/submit" method="POST" id="contact-form">
                         <input type="hidden" name="access_key" value="cf08c221-5252-41a1-9da9-df7a9e46465e">
                         <label for="contact-name" class="form__standard-label">Name:</label>
