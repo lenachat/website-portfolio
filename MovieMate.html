@@ -17,9 +17,9 @@
 </head>
 
 <body>
-    <header class="page-header">
-        <img class="page-header__item" src="images/header-text-logo.gif" alt="Lena Chatziastros Logo">
-        <nav class="page-header__item">
+    <header>
+        <img class="header-item" src="images/header-text-logo.gif" alt="Lena Chatziastros Logo">
+        <nav class="header-item">
             <ul role="menubar" class="navigation-list">
                 <li role="presentation">
                     <a href="index.html#about" role="menuitem">About</a>
@@ -28,7 +28,7 @@
                     <a href="index.html#experience" role="menuitem">Experience</a>
                 </li>
                 <li role="presentation">
-                    <a href="index.html#work" role="menuitem">Projects</a>
+                    <a href="index.html#projects" role="menuitem">Projects</a>
                 </li>
                 <li role="presentation">
                     <a href="index.html#contact" role="menuitem">Contact</a>
@@ -37,14 +37,15 @@
         </nav>
     </header>
 
+
     <main>
-        <div class="intro-container">
+        <div id="intro">
             <h1 class="bg-heading bg-heading-intro">MovieMate</h1>
             <div class="tools-container">
                 Node.js | Express | MongoDB | Mongoose | JWT authentication | REST API | React | React Router |
                 Bootstrap | Postman | Parcel | Render
             </div>
-            <div class="intro-text-container">
+            <div class="intro__text-container">
                 <div>
                     <p>
                         <strong>MovieMate</strong> is a full-stack web application designed for movie enthusiasts to
@@ -69,19 +70,22 @@
                         the user interface, and ensure smooth communication between the client and the server.
                     </p>
                 </div>
-                <div class="video-container">
-                    <video controls>
+                <div class="intro__video-container">
+                    <video autoplay>
                         <source src="images/moviemate-userstory-video.MOV">
                     </video>
                 </div>
-
+                <button class="button-main">
+                    <a href="https://moviemate-online.netlify.app/" target="_blank">See live Project
+                    </a>
+                </button>
             </div>
         </div>
 
-        <div class="main-container">
+        <div id="main">
             <h1 class="bg-heading bg-heading-main">Approach</h1>
-            <p class="bg-sub-heading">Process</p>
-            <div class="main-grid-container">
+            <h2 class="bg-sub-heading">Process</h2>
+            <div class="main__grid-container">
                 <div>
                     <h2>
                         Backend Development
@@ -100,7 +104,6 @@
                         views, but I was able to resolve it through careful middleware configuration. <br>
                     </p>
                 </div>
-
                 <div>
                     <h2>
                         Frontend Development
@@ -121,7 +124,6 @@
                         and global states. <br>
                     </p>
                 </div>
-
                 <div>
                     <h2>Database and Business Logic</h2>
                     <p>
@@ -135,20 +137,20 @@
                     </p>
                 </div>
             </div>
-        </div>
 
-        <div class="image-container">
-            <img src="images/moviemate-userstory-11.png" alt="">
-            <img src="images/moviemate-userstory-10.png" alt="">
-        </div>
-
-        <div class="conclusion-container">
-            <h1 class="bg-heading bg-heading-conclusion">Results</h1>
-            <p class="bg-sub-heading bg-sub-heading-conclusion">Conclusion</p>
-            <div class="conclusion-img-container">
-                <img src="images/moviemate-userstory-phone.png" alt="">
+            <div class="main__image-container">
+                <img src="images/moviemate-userstory-11.png" alt="MovieMate App Screenshot">
+                <img src="images/moviemate-userstory-10.png" alt="MovieMate App Screenshot">
             </div>
-            <div class="conclusion-text-container">
+        </div>
+
+        <div id="conclusion">
+            <h1 class="bg-heading bg-heading-conclusion">Results</h1>
+            <h2 class="bg-sub-heading bg-sub-heading-conclusion">Conclusion</h2>
+            <div class="conclusion__image-container">
+                <img src="images/moviemate-userstory-phone.png" alt="MovieMate App Screenshot on mobile device">
+            </div>
+            <div class="conclusion__text-container">
                 <p>
                     The end result was a responsive and fully functional web application that met the original
                     objectives. <br>
@@ -163,7 +165,7 @@
                     flows
                     and managing state in React apps. <br>
                     <br>
-                    I am most proud of the app’s intuitive design and its ability to provide users with a seamless
+                    I am most proud of the app's intuitive design and its ability to provide users with a seamless
                     experience across different devices. I hope users feel empowered to discover new films, save their
                     favorites, and share their recommendations.
                 </p>
