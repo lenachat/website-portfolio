@@ -35,6 +35,7 @@ body {
   margin: 15px 0;
   font-size: var(--font-size-default);
   line-height: 1.2em;
+  margin-bottom: 0;
 }
 
 h1 {
@@ -164,28 +165,41 @@ nav.header-item {
 
 /* ------ Footer ------ */
 
-/* .page-footer {
+.page-footer {
   clear: both;
   display: flex;
   flex-direction: column;
   text-align: center;
+  background-color: rgba(241, 238, 236, 0.6);
+  padding: 20px;
 }
 
 .page-footer p {
   font-weight: var(--font-weight-secondary);
-} */
+}
 
+.impressum {
+  font-size: var(--font-size-small);
+  color: var(--primary-text-color);
+  opacity: 0.8;
+}
 
-/* ------ About ------ */
+.copyright {
+  font-size: var(--font-size-small);
+  color: var(--primary-text-color);
+  opacity: 0.8;
+}
 
-#about {
+/* ------ Home ------ */
+
+#home {
   position: relative;
   display: flex;
   width: 100%;
   justify-content: center;
 }
 
-.about__grid-container {
+.home__grid-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 20px;
@@ -193,23 +207,26 @@ nav.header-item {
   z-index: 2;
   width: 80%;
   padding: 20px;
-  margin-top: 70px;
 }
- 
-.about__picture {
+
+.home__picture {
   width: 100%;
   height: auto;
   border-radius: 10px;
 }
 
-.about__text-container {
+.home__greeting {
+  font-size: 2.5em;
+}
+
+.home__text-container {
   position: relative;
   text-align: justify;
   padding-left: 10%;
   margin-top: 2em;
 }
 
-.about__vertical-lettering {
+.home__vertical-lettering {
   position: absolute;
   left: -70px;
   top: 50%;
@@ -239,6 +256,58 @@ nav.header-item {
   border: none;
 }
 
+/* ------ About ------- */
+
+#about {
+  position: relative;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.about__grid-container-top {
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  gap: 20px;
+  position: relative;
+  z-index: 2;
+  width: 80%;
+  padding: 20px;
+}
+
+.about__grid-container-bottom {
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  gap: 20px;
+  position: relative;
+  z-index: 2;
+  width: 80%;
+  padding: 20px;
+  justify-self: center;
+}
+
+.about__vertical-lettering {
+  position: absolute;
+  left: -110px;
+  top: 280px;
+  transform: rotate(90deg) translateY(-50%);
+  letter-spacing: 8px;
+  font-size: 1rem;
+  z-index: 3;
+}
+
+.about__text-container {
+  text-align: justify;
+  margin-top: 80px;
+  padding: 10px;
+}
+
+.about__image {
+  position: relative;
+  width: 90%;
+  top: 50px;
+  z-index: 1;
+}
 
 /* ------ Experience ------ */
 
@@ -255,7 +324,8 @@ nav.header-item {
 
 .experience__grid-container {
   display: grid;
-  grid-template-columns: 0.6fr 0.4fr;
+  grid-template-columns: 1fr;
+  /*0.6fr 0.4fr;*/
   gap: 20px;
   position: relative;
   z-index: 2;
@@ -290,12 +360,26 @@ nav.header-item {
 
 .experience__skills-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   gap: 20px;
+  text-align: left;
 }
 
 .experience__skills-grid p {
   color: var(--accent-color);
+  padding: 0 20px;
+}
+
+.experience__skills-grid ul {
+  list-style-type: none;
+  padding: 0 20px;
+}
+
+.experience__grid-item {
+  border-width: 1px;
+  border-radius: 10px;
+  border: solid 2px #f1eeec;
+  text-align: center;
 }
 
 /* ------ Work ------ */
@@ -314,6 +398,11 @@ nav.header-item {
 #projects .bg-heading {
   color: var(--accent-color);
   opacity: 0.7;
+  top: 110px;
+}
+
+#projects .bg-sub-heading {
+  top: 130px;
 }
 
 .projects__grid-container {
@@ -373,7 +462,7 @@ nav.header-item {
 .projects__vertical-lettering {
   position: absolute;
   left: -110px;
-  top: 3%;
+  top: 10%;
   transform: rotate(90deg) translateY(-50%);
   letter-spacing: 8px;
   font-size: 1rem;
@@ -496,10 +585,6 @@ textarea:focus {
     height: auto;
   }
 
-  .experience__skills-grid {
-    grid-template-columns: 1fr;
-  }
-
   h1 {
     font-size: 1.4em;
   }
@@ -534,21 +619,38 @@ textarea:focus {
     font-size: 5rem;
   }
 
-  .about__grid-container {
+  .home__grid-container {
     grid-template-columns: 1fr;
   }
 
-  .about__picture {
+  .home__greeting {
+    font-size: 1.5em;
+  }
+
+  .home__picture {
     width: 60%;
     height: auto;
     margin: 0 auto;
   }
 
-  .experience__picture {
+  .home__text-container {
+    padding-left: 0;
+  }
+
+  .about__grid-container-top,
+  .about__grid-container-bottom {
+    grid-template-columns: 1fr;
+  }
+
+  .about__image {
     display: none;
   }
 
-  .experience__grid-container {
+  .about__grid-container-bottom img {
+    display: none;
+  }
+
+  .experience__skills-grid {
     grid-template-columns: 1fr;
   }
 
@@ -567,7 +669,7 @@ textarea:focus {
     order: 2;
   }
 
-  .about__vertical-lettering {
+  .home__vertical-lettering {
     left: -90px;
     top: 45%;
   }

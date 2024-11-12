@@ -18,19 +18,19 @@
 
 <body>
     <header>
-        <img class="header-item" src="images/header-text-logo.gif" alt="Lena Chatziastros Logo">
+        <a href="#"><img class="header-item" src="images/header-text-logo.gif" alt="Lena Chatziastros Logo"></a>
         <nav class="header-item">
-            <ul role="menubar" class="navigation-list">
-                <li role="presentation">
+            <ul role="navigation" class="navigation-list">
+                <li role="navigation">
                     <a href="#about" role="menuitem">About</a>
                 </li>
-                <li role="presentation">
-                    <a href="#experience" role="menuitem">Experience</a>
-                </li>
-                <li role="presentation">
+                <li role="navigation">
                     <a href="#projects" role="menuitem">Projects</a>
                 </li>
-                <li role="presentation">
+                <li role="navigation">
+                    <a href="#experience" role="menuitem">Toolkit</a>
+                </li>
+                <li role="navigation">
                     <a href="#contact" role="menuitem">Contact</a>
                 </li>
             </ul>
@@ -38,32 +38,22 @@
     </header>
 
     <main>
-        <div id="about">
-            <h1 class="bg-heading">About</h1>
-            <div class="about__grid-container">
-                <img class="about__picture" src="images/portrait-full.jpeg" alt="Lena Chatziastros Portrait">
-                <div class="about__text-container">
-                    <h1>Hey there!</h1>
-                    <div class="about__vertical-lettering">
-                        <span>ABOUT
-                            <hr class="hr-primary">
-                        </span>
-                    </div>
+        <div id="home">
+            <div class="home__grid-container">
+                <img class="home__picture" src="images/portrait-full.jpeg" alt="Lena Chatziastros Portrait">
+                <div class="home__text-container">
+                    <h1 class="home__greeting">Hey there!</h1>
                     <p>
-                        I'm Lena Chatziastros, a <span class="accent-font-color">Web Developer</span> from
-                        Germany.
-                        <br>
-                        I am passionate about leveraging technology to drive solutions in
-                        sustainability and environmental impact.
-                        <br>
-                        I believe in the power of empathy and seeing problems from multiple angles, which helps me
-                        understand diverse user needs and create
-                        solutions that truly resonate with people.
+                        I'm Lena, a <span class="accent-font-color">Web Developer</span> from
+                        Germany with a background in physics.
                         <br>
                         <br>
-                        Currently, I am improving my Full-Stack Web Development skills at CareerFoundry.
+                        I'm passionate about using technology to tackle environmental challenges
+                        and create a positive impact on society.
                         <br>
                         <br>
+                        Curious by nature and open-minded at heart, I'm always looking to learn and grow—whether
+                        through a new project, the next adventure or an inspiring conversation.
                         When I'm not in front of my computer, you'll likely find me outdoors!
                     </p>
                     <button class="button-main"><a href="#contact">Get in Touch</a></button>
@@ -71,89 +61,74 @@
             </div>
         </div>
 
-        <div id="experience">
-            <h1 class="bg-heading">Experience</h1>
-            <h2 class="bg-sub-heading">Skills</h2>
-
-            <div class="experience__grid-container">
-                <div class="experience__vertical-lettering">
-                    <span>EXPERIENCE
-                        <hr class="hr-primary">
-                    </span>
-                </div>
-
-                <div class="experience__text-container">
+        <div id="about">
+            <h1 class="bg-heading">About</h1>
+            <h2 class="bg-sub-heading">Who I am</h2>
+            <div class="about__grid-container-top">
+                <div class="about__text-container">
+                    <div class="about__vertical-lettering">
+                        <span>ABOUT
+                            <hr class="hr-primary">
+                        </span>
+                    </div>
                     <h2>My Background</h2>
                     <p>
-                        My journey into Web Development began during my studies in Physics, where I developed a strong
-                        foundation
-                        in analytical thinking and problem-solving. Tackling complex challenges has always been a
-                        passion of mine,
-                        which naturally led me to coding.
+                        My path into tech began with my studies in <strong>physics</strong>, where I developed an
+                        appreciation for complex
+                        systems and honed my analytical mindset through coding in <strong>Python</strong>. Physics
+                        taught me to stay curious
+                        and tackle challenges with resilience — skills that prove powerful in web development
+                        on a daily basis.
                         <br>
-                        What excites me most about web development is its unique combination of problem-solving,
-                        creativity, and
-                        craftsmanship, enabling me to create applications that are both functional and engaging.
                         <br>
-                        I'm eager to apply these skills to develop innovative digital solutions that contribute to
-                        sustainability and
-                        environmental initiatives, using technology drive impactful, real-world change.
+                        Beyond the technical side, I bring experience in <strong>tutoring</strong> and <strong>social
+                            media management</strong>.
+                        As a tutor, I learned the value of <strong>clear communication</strong> and
+                        <strong>empathy</strong>, creating study plans
+                        tailored to each student's needs to not only achieve
+                        lasting improvements in their grades, but also boost their confidence. <br>
+                        In my role as a social media manager for the student organization IAESTE, I
+                        <strong>designed</strong> a lasting series of
+                        <strong>engaging posts and interactive stories</strong>, strengthen their online
+                        presence and help them stand out among numerous students organizations.
+                        <br>
+                        <br>
+                        During an international internship in Tanzania, I had the chance to contribute to <strong>STEM
+                            education</strong> for young
+                        girls and
+                        supported teacher development across the country. I co-hosted an interactive Astronomy Day for
+                        over
+                        200 students, sparking curiosity about science, and shared my knowledge of astronomy with
+                        teachers to deepen their subject expertise.
                     </p>
-
-                    <div class="experience__skills-grid">
-                        <div>
-                            <p>1 - Languages</p>
-                            <ul>
-                                <li>HTML</li>
-                                <li>CSS</li>
-                                <li>JavaScript</li>
-                                <li>TypeScript</li>
-                                <li>Python</li>
-                            </ul>
-                        </div>
-                        <div>
-                            <p>2 - Libraries &amp; Frameworks</p>
-                            <ul>
-                                <li>React</li>
-                                <li>Angular</li>
-                                <li>Bootstrap</li>
-                                <li>Recharts</li>
-                                <li>Angular-Material</li>
-                                <li>jQuery</li>
-                                <li>Express</li>
-                                <li>NodeJS</li>
-                                <li>Serverless</li>
-                                <li>React Native</li>
-                                <li>Expo</li>
-                            </ul>
-                        </div>
-                        <div>
-                            <p>3 - Documenting &amp; Testing</p>
-                            <ul>
-                                <li>Postman</li>
-                                <li>Jest</li>
-                                <li>Cucumber</li>
-                                <li>Puppeteer</li>
-                                <li>JSDoc</li>
-                                <li>TypeDoc</li>
-                            </ul>
-                        </div>
-                        <div>
-                            <p>4 - Web Services &amp; Databases</p>
-                            <ul>
-                                <li>GitHub</li>
-                                <li>AWS</li>
-                                <li>MongoDB</li>
-                                <li>PostgreSQL</li>
-                                <li>Firebase</li>
-                                <li>Google Calendar API</li>
-                                <li>Render</li>
-                                <li>Netlify</li>
-                            </ul>
-                        </div>
-                    </div>
                 </div>
-                <img class="experience__picture" src="images/laptop-photo.webp">
+                <img class="about__image" src="images/IMG_5764.jpeg" alt="">
+            </div>
+        </div>
+        <div class="about__grid-container-bottom">
+            <img src="images/laptop-photo-small.png" alt="" style="width: 80%;">
+            <div>
+                <h2>Why I became a Developer</h2>
+                <p>
+                    Transitioning into web development has been an exciting shift, allowing me to join a field
+                    that's
+                    constantly <strong>evolving</strong> and filled with opportunities for <strong>growth</strong>.
+                    I'm committed to contribute to projects that promote <strong>sustainability</strong>,
+                    <strong>environmental awareness</strong>, and <strong>social justice</strong>.
+                    Through web development, I aim to create applications that engage and inform for a positive
+                    change in the world.
+                    <br>
+                    <br>
+                    While I work well independently, I truly thrive in collaborative environments where we can
+                    support and encourage each other. I value <strong>empathy</strong> and a positive working
+                    culture, as I believe they're
+                    key to creating meaningful work.
+                    <br>
+                    <br>
+                    By staying <strong>curious</strong> and open to new ideas, I
+                    aim to create
+                    digital experiences that <strong>inspire</strong> a better tomorrow.
+                </p>
             </div>
         </div>
 
@@ -171,8 +146,9 @@
                     <div class="projects__description-container">
                         <h2>MovieMate</h2>
                         <p onclick="window.location.href='MovieMate.html'">
-                            A full-stack web application, built using the <strong>MERN</strong> stack
-                            (MongoDB, Express, React, Node.js). The movie app allows users to explore information
+                            A full-stack web application, built using the MERN stack
+                            (<strong>MongoDB</strong>, <strong>Express</strong>, <strong>React</strong>,
+                            <strong>Node.js</strong>). The movie app allows users to explore information
                             about
                             various movies,
                             create a list of favorite movies, and manage their profiles.
@@ -222,8 +198,9 @@
                         <h2>Eventory</h2>
                         <p>
                             A <strong>serverless</strong> progressive web application built with <strong>React</strong>,
-                            featuring <strong>test-driven</strong>
-                            development, that utilizes the Google Calendar API to display upcoming events in various
+                            featuring <strong>test-driven
+                                development</strong>, that utilizes the Google Calendar API to display upcoming events
+                            in various
                             cities, offering
                             offline
                             functionality,
@@ -316,6 +293,91 @@
             </div>
         </div>
 
+        <div id="experience">
+            <h1 class="bg-heading">Toolkit</h1>
+            <h2 class="bg-sub-heading">Technical Skills</h2>
+
+            <div class="experience__grid-container">
+                <div class="experience__vertical-lettering">
+                    <span>TOOLKIT
+                        <hr class="hr-primary">
+                    </span>
+                </div>
+
+                <div class="experience__text-container">
+                    <div class="experience__skills-grid">
+                        <div class="experience__grid-item">
+                            <p>Languages</p>
+                            <ul>
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>JavaScript</li>
+                                <li>TypeScript</li>
+                                <li>Python</li>
+                            </ul>
+                        </div>
+                        <div class="experience__grid-item">
+                            <p>Libraries &amp; Frameworks</p>
+                            <ul>
+                                <li>React</li>
+                                <li>Recharts</li>
+                                <li>Angular</li>
+                                <li>Angular-Material</li>
+                                <li>Bootstrap</li>
+                                <li>jQuery</li>
+                                <li>React Native</li>
+                                <li>Expo</li>
+                            </ul>
+                        </div>
+                        <div class="experience__grid-item">
+                            <p>Backend &amp; Databases</p>
+                            <ul>
+                                <li>RESTful APIs</li>
+                                <li>NodeJS</li>
+                                <li>Express</li>
+                                <li>MongoDB</li>
+                                <li>PostgreSQL</li>
+                                <li>Firebase</li>
+                                <li>AWS cloud computing</li>
+                                <li>Render</li>
+                                <li>Netlify</li>
+                            </ul>
+                        </div>
+                        <div class="experience__grid-item">
+                            <p>Testing &amp; Documenting</p>
+                            <ul>
+                                <li>Postman</li>
+                                <li>Jest</li>
+                                <li>Cucumber</li>
+                                <li>Puppeteer</li>
+                                <li>JSDoc</li>
+                                <li>TypeDoc</li>
+                                <li>Chrome Dev Tools</li>
+                                <li>Xcode Simulator</li>
+                                <li>Atatus</li>
+                            </ul>
+                        </div>
+                        <div class="experience__grid-item">
+                            <p>Tools &amp; Workflow</p>
+                            <ul>
+                                <li>Git</li>
+                                <li>GitHub</li>
+                                <li>Trello</li>
+                                <li>Ora</li>
+                                <li>Figma</li>
+                                <li>Canva</li>
+                                <li>VS Code</li>
+                                <li>SCRUM</li>
+                                <li>Agile</li>
+                                <li>User Stories</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
         <div id="contact">
             <h1 class="bg-heading">Contact</h1>
             <h2 class="bg-sub-heading">Let's Talk</h2>
@@ -332,15 +394,13 @@
                         <br>
                         <br>
                         <br>
-                        <a class="email-link" href="mailto:abc@xyz.com"><span>E-mail: abc(at)xyz(dot)com</span></a>
+                        <a class="email-link" href="mailto:lena.chatziastros@gmx.de">
+                            <span>lena.chatziastros@gmx.de</span></a>
                         <br>
                         <br>
                         <div class="social-media-links">
                             <a href="https://www.linkedin.com/in/lena-chatziastros-311ab023b/" target="_blank">
                                 <img style="width: 30px; height: 30px;" src="images/linkedin-logo.svg" alt="LinkedIn">
-                            </a>
-                            <a href="https://www.instagram.com/lena_chatziastros/" target="_blank">
-                                <img style="width: 30px; height: 30px;" src="images/instagram-logo.svg" alt="Instagram">
                             </a>
                             <a href="https://x.com/Lenachatx">
                                 <img style="width: 30px; height: 30px;" src="images/twitter-logo.svg" alt="Twitter">
@@ -375,20 +435,22 @@
         </div>
     </main>
 
-    <!-- <footer class="page-footer">
+    <footer class="page-footer">
         <p>Find me on</p>
-        <div class="page-footer__social-media-links">
+        <div class="social-media-links">
             <a href="https://www.linkedin.com/in/lena-chatziastros-311ab023b/" target="_blank">
-                <img style="width: 40px; height: 40px;" src="images/linkedin-logo.svg" alt="LinkedIn">
+                <img style="width: 30px; height: 30px;" src="images/linkedin-logo.svg" alt="LinkedIn">
             </a>
-            <a href="https://www.instagram.com/lena_chatziastros/" target="_blank">
-                <img style="width: 40px; height: 40px;" src="images/instagram-logo.svg" alt="Instagram">
+            <a href="https://x.com/Lenachatx">
+                <img style="width: 30px; height: 30px;" src="images/twitter-logo.svg" alt="Twitter">
             </a>
             <a href="https://github.com/lenachat" target="_blank">
-                <img style="width: 40px; height: 40px;" src="images/github-logo.svg" alt="GitHub">
+                <img style="width: 30px; height: 30px;" src="images/github-logo.svg" alt="GitHub">
             </a>
         </div>
-    </footer> -->
+        <p class="copyright">&copy; 2024 Lena Chatziastros. All rights reserved.</p>
+        <a href="impressum.html">Impressum</a>
+    </footer>
 </body>
 
 </html>
