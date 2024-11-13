@@ -14,12 +14,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Rozha+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/normalization.css">
     <link rel="stylesheet" type="text/css" href="css/style.production.css">
-    <link rel="stylesheet" type="text/css" href="css/moviemate.production.css">
+    <link rel="stylesheet" type="text/css" href="css/moviemate.css">
 </head>
 
 <body>
     <header>
-        <a href="index.html#"><img class="header-item" src="images/header-text-logo.gif" alt="Lena Chatziastros Logo"></a>
+        <a href="index.html#"><img class="header-item" src="images/header-text-logo.gif"
+                alt="Lena Chatziastros Logo"></a>
         <nav class="header-item">
             <ul role="navigation" class="navigation-list">
                 <li role="navigation">
@@ -41,11 +42,11 @@
     <main>
         <div id="intro">
             <h1 class="bg-heading bg-heading-intro">MovieMate</h1>
-            <div class="tools-container">
-                Node.js | Express | MongoDB | Mongoose | JWT authentication | REST API | React | React Router |
-                Bootstrap | Postman | Parcel | Render
-            </div>
+            <h2 class="bg-sub-heading bg-sub-heading-intro">Case Study</h2>
             <div class="intro__text-container">
+                <div class="intro__image-container">
+                    <img src="images/moviemate-img.png" alt="">
+                </div>
                 <div>
                     <p>
                         <strong>MovieMate</strong> is a full-stack web application designed for movie enthusiasts to
@@ -56,13 +57,25 @@
                         of the application, providing users with a seamless experience to access, save, and curate lists
                         of movies based on various attributes such as genre, director, and individual preferences.
                     </p>
-                    <p>
-                        <strong>Goal:</strong> The primary goal was to create a user-friendly platform where users can
+                    <div>
+                        <h2>Tech Stack</h2>
+                        <p>
+                            Backend: Node.js, Express, MongoDB, Mongoose, JWT authentication, REST API
+                            <br>
+                            Frontend: React, React Router, Bootstrap, Postman, Parcel, Render
+                        </p>
+                    </div>
+                </div>
+                <div>
+                    <h2>Goal</h2>
+                    <p>  
+                        The primary goal was to create a user-friendly platform where users can
                         interact with a dynamic movie database, register for personalized accounts, and save favorite
                         movies.
                     </p>
+                    <h2>My Role</h2>
                     <p>
-                        <strong>My Role:</strong> I acted as the sole developer, taking charge of both backend and
+                        I acted as the sole developer, taking charge of both backend and
                         frontend
                         development,
                         as well as managing the database. I used my full-stack JavaScript skills to build the API,
@@ -70,14 +83,12 @@
                         the user interface, and ensure smooth communication between the client and the server.
                     </p>
                 </div>
-                <div class="intro__video-container">
-                    <video autoplay>
-                        <source src="images/moviemate-userstory-video.MOV">
-                    </video>
-                </div>
                 <button class="button-main intro__button">
                     <a href="https://moviemate-online.netlify.app/" target="_blank">See live Project
                     </a>
+                </button>
+                <button class="button-main intro__button">
+                    <a href="https://" target="_blank">Go to GitHub</a>
                 </button>
             </div>
         </div>
@@ -86,7 +97,7 @@
             <h1 class="bg-heading bg-heading-main">Approach</h1>
             <h2 class="bg-sub-heading">Process</h2>
             <div class="main__grid-container">
-                <div>
+                <div class="main__grid-item1">
                     <h2>
                         Backend Development
                     </h2>
@@ -104,7 +115,21 @@
                         views, but I was able to resolve it through careful middleware configuration. <br>
                     </p>
                 </div>
-                <div>
+                <img class="main__image main__grid-item2" src="images/moviemate-userstory-6.png" alt="" onclick="openLightbox(this)">
+                <img class="main__image main__grid-item3" src="images/moviemate-userstory-4.png" alt="" onclick="openLightbox(this)">
+                <div class="main__grid-item4">
+                    <h2>Database and Business Logic</h2>
+                    <p>
+                        MongoDB served as the NoSQL database, where I designed the schema
+                        to handle movie
+                        information and user data. I used Mongoose
+                        models to simplify queries and validations. During database setup, data validation was crucial
+                        to
+                        ensure that only
+                        correct information was saved.
+                    </p>
+                </div>
+                <div class="main__grid-item5">
                     <h2>
                         Frontend Development
                     </h2>
@@ -124,23 +149,20 @@
                         and global states. <br>
                     </p>
                 </div>
-                <div>
-                    <h2>Database and Business Logic</h2>
-                    <p>
-                        MongoDB served as the NoSQL database, where I designed the schema
-                        to handle movie
-                        information and user data. I used Mongoose
-                        models to simplify queries and validations. During database setup, data validation was crucial
-                        to
-                        ensure that only
-                        correct information was saved.
-                    </p>
-                </div>
+                <img class="main__image main__grid-item6" src="images/moviemate-userstory-7.png" alt="" onclick="openLightbox(this)">
+                <img class="main__image main__grid-item7" src="images/moviemate-userstory-8.png" alt="MovieMate App Screenshot"
+                    onclick="openLightbox(this)">
+                <img class="main__image main__grid-item8" src="images/moviemate-userstory-2.png" alt="MovieMate App Screenshot"
+                    onclick="openLightbox(this)">
             </div>
-
-            <div class="main__image-container">
-                <img src="images/moviemate-userstory-11.png" alt="MovieMate App Screenshot">
-                <img src="images/moviemate-userstory-10.png" alt="MovieMate App Screenshot">
+            <!-- <div class="main__image-grid-container">
+                <img class="main__image" src="images/moviemate-userstory-8.png" alt="MovieMate App Screenshot"
+                    onclick="openLightbox(this)">
+                <img class="main__image" src="images/moviemate-userstory-10.png" alt="MovieMate App Screenshot"
+                    onclick="openLightbox(this)">
+            </div> -->
+            <div id="lightbox" onclick="closeLightbox()">
+                <img id="lightbox-img">
             </div>
         </div>
 
@@ -190,6 +212,16 @@
         <a href="impressum.html">Impressum</a>
     </footer>
 
+    <script>
+        function openLightbox(image) {
+            document.getElementById("lightbox").style.display = "flex";
+            document.getElementById("lightbox-img").src = image.src;
+        }
+
+        function closeLightbox() {
+            document.getElementById("lightbox").style.display = "none";
+        }
+    </script>
 </body>
 
 </html>
