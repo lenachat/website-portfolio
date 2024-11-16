@@ -309,9 +309,9 @@ nav.header-item {
   z-index: 1;
 }
 
-/* ------ Experience ------ */
+/* ------ Toolkit ------ */
 
-#experience {
+#skills {
   position: relative;
   text-align: center;
   display: flex;
@@ -322,7 +322,7 @@ nav.header-item {
   margin-top: 100px;
 }
 
-.experience__grid-container {
+.skills__grid-container {
   display: grid;
   grid-template-columns: 1fr;
   /*0.6fr 0.4fr;*/
@@ -334,12 +334,12 @@ nav.header-item {
   margin-top: 120px;
 }
 
-.experience__text-container {
+.skills__text-container {
   text-align: justify;
   padding-left: 10%;
 }
 
-.experience__picture {
+.skills__picture {
   width: 100%;
   height: auto;
   box-shadow: 5px 5px 8px rgba(92, 88, 86, 0.2);
@@ -348,7 +348,7 @@ nav.header-item {
   border-radius: 10px;
 }
 
-.experience__vertical-lettering {
+.skills__vertical-lettering {
   position: absolute;
   left: -115px;
   top: 130px;
@@ -358,24 +358,33 @@ nav.header-item {
   z-index: 3;
 }
 
-.experience__skills-grid {
+.skills__skills-grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 20px;
   text-align: left;
 }
 
-.experience__skills-grid p {
+.skills__skills-grid p {
   color: var(--accent-color);
   padding: 0 20px;
 }
 
-.experience__skills-grid ul {
+.skills__skills-grid ul {
   list-style-type: none;
   padding: 0 20px;
 }
 
-.experience__grid-item {
+.skills__skills-grid li {
+  display: inline-block;
+  padding: 5px 10px;
+  background-color: #f6f3f0;
+  border-radius: 7px;
+  /* border: solid 2px var(--primary-bg-color); */
+  margin: 5px;
+}
+
+.skills__grid-item {
   border-width: 1px;
   border-radius: 10px;
   border: solid 2px #f1eeec;
@@ -650,7 +659,7 @@ textarea:focus {
     display: none;
   }
 
-  .experience__skills-grid {
+  .skills__skills-grid {
     grid-template-columns: 1fr;
   }
 
