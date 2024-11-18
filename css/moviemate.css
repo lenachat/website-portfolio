@@ -278,6 +278,14 @@ main {
     font-size: 1rem;
   }
 
+  .intro__techstack-grid {
+    display: block;
+  }
+
+  .intro__techstack-grid-item {
+    margin: 20px;
+  }
+
   .bg-heading-main {
     top: 10px;
   }
