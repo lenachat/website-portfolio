@@ -267,7 +267,9 @@ nav.header-item {
 #about {
   position: relative;
   display: flex;
-  width: 100%;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 80%;
   justify-content: center;
   margin-top: 100px;
 }
@@ -278,7 +280,7 @@ nav.header-item {
   gap: 20px;
   position: relative;
   z-index: 2;
-  width: 80%;
+  width: 100%;
   padding: 20px;
   margin-top: 50px;
 }
@@ -289,7 +291,7 @@ nav.header-item {
   gap: 20px;
   position: relative;
   z-index: 2;
-  width: 80%;
+  width: 100%;
   padding: 20px;
   justify-self: center;
 }
@@ -314,8 +316,8 @@ nav.header-item {
   position: relative;
   width: 90%;
   border-radius: 10px;
-
   z-index: 1;
+  margin: 0 auto;
 }
 
 /* ------ Toolkit ------ */
