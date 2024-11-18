@@ -32,10 +32,9 @@ body {
   font-family: "Kanit", sans-serif;
   font-weight: var(--font-weight-primary);
   font-style: normal;
-  margin: 15px 0;
+  margin: 0;
   font-size: var(--font-size-default);
   line-height: 1.2em;
-  margin-bottom: 0;
 }
 
 h1 {
@@ -100,16 +99,13 @@ a:hover {
 header {
   display: flex;
   padding: 20px;
-}
-
-/* header {
   position: sticky;
   top: 0;
   background-color: var(--secondary-bg-color);
   z-index: 1000;
   width: 100%;
-  box-shadow: 0 3px 8px -2px rgb(187, 187, 187);
-} */
+  box-shadow: 0 3px 15px -2px rgb(187, 187, 187, 0.2);
+}
 
 .header-item {
   flex: 0 1 200px;
@@ -206,6 +202,7 @@ nav.header-item {
   display: flex;
   width: 100%;
   justify-content: center;
+  margin-top: 30px;
 }
 
 .home__grid-container {
@@ -272,6 +269,7 @@ nav.header-item {
   display: flex;
   width: 100%;
   justify-content: center;
+  margin-top: 100px;
 }
 
 .about__grid-container-top {
@@ -330,7 +328,7 @@ nav.header-item {
   justify-content: center;
   align-items: center;
   background-color: var(--secondary-bg-color);
-  margin-top: 100px;
+  margin-top: 80px;
 }
 
 .skills__grid-container {
