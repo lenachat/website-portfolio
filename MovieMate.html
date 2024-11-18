@@ -15,15 +15,15 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
     <link rel="stylesheet" type="text/css" href="css/normalization.css">
     <link rel="stylesheet" type="text/css" href="css/style.production.css">
-    <link rel="stylesheet" type="text/css" href="css/moviemate.production.css">
+    <link rel="stylesheet" type="text/css" href="css/moviemate.css">
 </head>
 
 <body>
     <header>
-        <a href="index.html#"><img class="header-item" data-aos="fade-right" data-aos-duration="800" data-aos-once="true"
-                src="images/header-text-logo.gif" alt="Lena Chatziastros Logo"></a>
+        <a href="index.html#"><img class="header-item" data-aos="fade-right" data-aos-duration="800"
+                data-aos-once="true" src="images/header-text-logo.gif" alt="Lena Chatziastros Logo"></a>
         <nav class="header-item">
-            <ul role="navigation" class="navigation-list" data-aos="fade" data-aos-duration="800">
+            <ul role="navigation" class="navigation-list" data-aos="fade" data-aos-duration="800" data-aos-once="true">
                 <li role="navigation">
                     <a href="index.html#about" role="menuitem">About</a>
                 </li>
@@ -44,55 +44,74 @@
         <div id="intro">
             <h1 class="bg-heading bg-heading-intro">MovieMate</h1>
             <h2 class="bg-sub-heading bg-sub-heading-intro">Case Study</h2>
-            <div class="intro__text-container">
-                <div class="intro__image-container" data-aos="fade-up" data-aos-duration="800">
-                    <img src="images/moviemate-img.png" alt="">
-                </div>
-                <div>
-                    <p>
-                        <strong>MovieMate</strong> is a full-stack web application designed for movie enthusiasts to
-                        explore
-                        and
-                        manage
-                        their favorite films. The project aimed to build both the server-side and client-side components
-                        of the application, providing users with a seamless experience to access, save, and curate lists
-                        of movies based on various attributes such as genre, director, and individual preferences.
-                    </p>
-                    <div>
-                        <h2>Tech Stack</h2>
-                        <p>
-                            Backend: Node.js, Express, MongoDB, Mongoose, JWT authentication, REST API
-                            <br>
-                            Frontend: React, React Router, Bootstrap, Postman, Parcel, Render
-                        </p>
-                    </div>
-                </div>
-                <div>
-                    <h2>Goal</h2>
-                    <p>
-                        The primary goal was to create a user-friendly platform where users can
-                        interact with a dynamic movie database, register for personalized accounts, and save favorite
-                        movies.
-                    </p>
-                    <h2>My Role</h2>
-                    <p>
-                        I acted as the sole developer, taking charge of both backend and
-                        frontend
-                        development,
-                        as well as managing the database. I used my full-stack JavaScript skills to build the API,
-                        design
-                        the user interface, and ensure smooth communication between the client and the server.
-                    </p>
-                </div>
-                <button class="button-main intro__button" data-aos="fade-up" data-aos-duration="800">
-                    <a href="https://moviemate-online.netlify.app/" target="_blank">See live Project
-                    </a>
-                </button>
-                <button class="button-main intro__button" data-aos="fade-up" data-aos-duration="800"
-                    data-aos-delay="50">
-                    <a href="https://" target="_blank">Go to GitHub</a>
-                </button>
+            <div class="intro__image-container" data-aos="fade-up" data-aos-duration="800">
+                <img src="images/moviemate-img.png" alt="">
             </div>
+            <h2>Overview</h2>
+            <p>
+                <strong>MovieMate</strong> is a full-stack web application designed for movie enthusiasts to
+                explore
+                and
+                manage
+                their favorite films. The project aimed to build both the server-side and client-side components
+                of the application, providing users with a seamless experience to access, save, and curate lists
+                of movies based on various attributes such as genre, director, and individual preferences.
+            </p>
+            <h2>Tech Stack</h2>
+            <div class="intro__techstack-grid">
+                <div class="intro__techstack-grid-item">
+                    <p><strong>Server-Side</strong></p>
+                    <ul>
+                        <li data-aos="fade-up" data-aos-duration="800">Node.js</li>
+                        <li data-aos="fade-up" data-aos-duration="800" data-aos-delay="50">Express</li>
+                        <li data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">MongoDB</li>
+                        <li data-aos="fade-up" data-aos-duration="800" data-aos-delay="150">Mongoose</li>
+                        <li data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">JWT authentication</li>
+                        <li data-aos="fade-up" data-aos-duration="800" data-aos-delay="250">REST API</li>
+                        <li data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">Postman</li>
+                        <li data-aos="fade-up" data-aos-duration="800" data-aos-delay="350">Render</li>
+                    </ul>
+                </div>
+                <div class="intro__techstack-grid-item">
+                    <p><strong>Client-Side</strong></p>
+                    <ul>
+                        <li data-aos="fade-up" data-aos-duration="800">React</li>
+                        <li data-aos="fade-up" data-aos-duration="800" data-aos-delay="50">React Router</li>
+                        <li data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">React Bootstrap</li>
+                        <li data-aos="fade-up" data-aos-duration="800" data-aos-delay="150">Parcel</li>
+                        <li data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">Netlify</li>
+                    </ul>
+                </div>
+            </div>
+            <h2>Goal</h2>
+            <p>
+                The primary goal was to create a user-friendly platform where users can
+            <ul>
+                <li>Interact with a dynamic movie database</li>
+                <li>Register for personalized accounts</li>
+                <li>Save and manage a list of favorite movies</li>
+            </ul>
+            </p>
+            <h2>My Role</h2>
+            <p>
+                I was the sole developer responsible for both backend and frontend development,
+                including database management. This project was part of a full-stack web development
+                course, where I utilized my JavaScript skills to:
+            <ul>
+                <li>Build the RESTful API</li>
+                <li>Design anf implement the user interface with React</li>
+                <li>Ensure seamless communication between client and server</li>
+            </ul>
+            Although I worked independently, I had access to a mentor and tutor for guidance when tackling
+            complex challenges.
+            </p>
+            <button class="button-main intro__button" data-aos="fade-up" data-aos-duration="800">
+                <a href="https://moviemate-online.netlify.app/" target="_blank">See live Project
+                </a>
+            </button>
+            <button class="button-main intro__button" data-aos="fade-up" data-aos-duration="800" data-aos-delay="50">
+                <a href="https://" target="_blank">Go to GitHub</a>
+            </button>
         </div>
 
         <div id="main">
@@ -168,27 +187,74 @@
         <div id="conclusion">
             <h1 class="bg-heading bg-heading-conclusion">Results</h1>
             <h2 class="bg-sub-heading bg-sub-heading-conclusion">Conclusion</h2>
-            <div class="conclusion__image-container" data-aos="fade-up" data-aos-duration="800">
-                <img src="images/moviemate-userstory-phone.png" alt="MovieMate App Screenshot on mobile device">
+            <div class="conclusion__grid-container">
+                <div class="conclusion__image-container" data-aos="fade-up" data-aos-duration="800">
+                    <img src="images/moviemate-userstory-phone.png" alt="MovieMate App Screenshot on mobile device">
+                </div>
+                <div class="conclusion__text-container">
+                    <p>
+                        The final product is a responsive and fully functional web application that met the original
+                        objectives. MovieMate successfully provides movie enthusiasts with a platform to discover and
+                        manage movie information. <br>
+                        <br>
+                        Challenges like user authentication and state management taught me valuable lessons in debugging
+                        complex flows and handling state in React.
+                    </p>
+                </div>
             </div>
-            <div class="conclusion__text-container">
+            <div data-aos="fade-right" data-aos-duration="800">
+                <h2>Key Achievements</h2>
+                <ul>
+                    <li>Gained experience with full-stack development by building a complete web
+                        application from backend to frontend.
+                    </li>
+                    <li>
+                        Learned how to set up a non-relational database using MongoDB, including schema
+                        design and data modeling.
+                    </li>
+                    <li>
+                        Utilized Postman for endpoint testing, ensuring the API functionality
+                        and efficient debugging.
+                    </li>
+                    <li>
+                        Mastered state management in React using hooks for dynamic
+                        updates and user data handling.
+                    </li>
+                    <li>
+                        Implemented token-based user authentication for secure login and routing.
+                    </li>
+                    <li>
+                        Designed and built a RESTful API to manage movies, users, and favorites, integrating it
+                        with the React frontend for seamless communication.
+                    </li>
+                    <li>
+                        Developed a responsive, user-friendly interface with features like favorites management
+                        and dynamic search and filtering, to enhance user experience.
+                    </li>
+                </ul>
+            </div>
+            <div data-aos="fade-left" data-aos-duration="800">
+                <h2>Future Improvements</h2>
                 <p>
-                    The end result was a responsive and fully functional web application that met the original
-                    objectives. <br>
-                    <br>
-                    The initial problem of providing movie enthusiasts with a platform to
-                    discover and manage movie information was successfully solved with MovieMate. The final product
-                    matched
-                    the
-                    original vision, though I encountered challenges along the way, especially with user authentication
-                    and state management. These challenges taught me valuable lessons in debugging complex
-                    authentication
-                    flows
-                    and managing state in React apps. <br>
-                    <br>
-                    I am most proud of the app's intuitive design and its ability to provide users with a seamless
-                    experience across different devices. I hope users feel empowered to discover new films, save their
-                    favorites, and share their recommendations.
+                    While MovieMate is fully functional, there is room for improvement to enhance
+                    the user experience further:
+                <ul>
+                    <li>Loading Screen for Authentication: Currently,
+                        the app is hosted by free hosting services. As a result,
+                        loading times can be longer during sign-up or login. A
+                        loading spinner or progress indicator could provide users with clear feedback during
+                        these operations, reducing any perceived delays.
+                    </li>
+                    <li>
+                        Enhanced Sign-Up Process: More specific
+                        error messages during sign-up could be implemented, such as notifying users when their
+                        chosen username is already taken or when their password does not meet the requirements.
+                    </li>
+                    <li>
+                        Account Deletion Confirmation: To prevent accidental account deletion,
+                        a verification step in the profile view could be added.
+                    </li>
+                </ul>
                 </p>
             </div>
         </div>
