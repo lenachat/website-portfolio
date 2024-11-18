@@ -114,6 +114,15 @@ header {
   padding: 20px;
 }
 
+/* header {
+  position: sticky;
+  top: 0;
+  background-color: var(--secondary-bg-color);
+  z-index: 1000;
+  width: 100%;
+  box-shadow: 0 3px 8px -2px rgb(187, 187, 187);
+} */
+
 .header-item {
   -webkit-box-flex: 0;
       -ms-flex: 0 1 200px;
@@ -316,6 +325,7 @@ nav.header-item {
   z-index: 2;
   width: 80%;
   padding: 20px;
+  margin-top: 50px;
 }
 
 .about__grid-container-bottom {
@@ -336,9 +346,9 @@ nav.header-item {
   position: absolute;
   left: -110px;
   top: 280px;
-  -webkit-transform: rotate(90deg) translateY(-50%);
-      -ms-transform: rotate(90deg) translateY(-50%);
-          transform: rotate(90deg) translateY(-50%);
+  -webkit-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+          transform: rotate(90deg);
   letter-spacing: 8px;
   font-size: 1rem;
   z-index: 3;
@@ -346,20 +356,21 @@ nav.header-item {
 
 .about__text-container {
   text-align: justify;
-  margin-top: 80px;
+  margin-top: 10px;
   padding: 10px;
 }
 
 .about__image {
   position: relative;
   width: 90%;
-  top: 50px;
+  border-radius: 10px;
+
   z-index: 1;
 }
 
-/* ------ Experience ------ */
+/* ------ Toolkit ------ */
 
-#experience {
+#skills {
   position: relative;
   text-align: center;
   display: -webkit-box;
@@ -376,7 +387,7 @@ nav.header-item {
   margin-top: 100px;
 }
 
-.experience__grid-container {
+.skills__grid-container {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr;
@@ -390,12 +401,12 @@ nav.header-item {
   margin-top: 120px;
 }
 
-.experience__text-container {
+.skills__text-container {
   text-align: justify;
   padding-left: 10%;
 }
 
-.experience__picture {
+.skills__picture {
   width: 100%;
   height: auto;
   -webkit-box-shadow: 5px 5px 8px rgba(92, 88, 86, 0.2);
@@ -405,19 +416,19 @@ nav.header-item {
   border-radius: 10px;
 }
 
-.experience__vertical-lettering {
+.skills__vertical-lettering {
   position: absolute;
   left: -115px;
   top: 130px;
-  -webkit-transform: rotate(90deg) translateY(-50%);
-      -ms-transform: rotate(90deg) translateY(-50%);
-          transform: rotate(90deg) translateY(-50%);
+  -webkit-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+          transform: rotate(90deg);
   letter-spacing: 8px;
   font-size: 1rem;
   z-index: 3;
 }
 
-.experience__skills-grid {
+.skills__skills-grid {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 20px 1fr 20px 1fr;
@@ -426,17 +437,26 @@ nav.header-item {
   text-align: left;
 }
 
-.experience__skills-grid p {
+.skills__skills-grid p {
   color: var(--accent-color);
   padding: 0 20px;
 }
 
-.experience__skills-grid ul {
+.skills__skills-grid ul {
   list-style-type: none;
   padding: 0 20px;
 }
 
-.experience__grid-item {
+.skills__skills-grid li {
+  display: inline-block;
+  padding: 5px 10px;
+  background-color: #f6f3f0;
+  border-radius: 7px;
+  /* border: solid 2px var(--primary-bg-color); */
+  margin: 5px;
+}
+
+.skills__grid-item {
   border-width: 1px;
   border-radius: 10px;
   border: solid 2px #f1eeec;
@@ -547,9 +567,9 @@ nav.header-item {
   position: absolute;
   left: -110px;
   top: 10%;
-  -webkit-transform: rotate(90deg) translateY(-50%);
-      -ms-transform: rotate(90deg) translateY(-50%);
-          transform: rotate(90deg) translateY(-50%);
+  -webkit-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+          transform: rotate(90deg);
   letter-spacing: 8px;
   font-size: 1rem;
   z-index: 3;
@@ -615,9 +635,9 @@ nav.header-item {
   position: absolute;
   left: -130px;
   top: 40%;
-  -webkit-transform: rotate(90deg) translateY(-50%);
-      -ms-transform: rotate(90deg) translateY(-50%);
-          transform: rotate(90deg) translateY(-50%);
+  -webkit-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+          transform: rotate(90deg);
   letter-spacing: 8px;
   font-size: 1rem;
   z-index: 3;
@@ -756,7 +776,7 @@ textarea:focus {
     display: none;
   }
 
-  .experience__skills-grid {
+  .skills__skills-grid {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
   }
@@ -779,11 +799,6 @@ textarea:focus {
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
             order: 2;
-  }
-
-  .home__vertical-lettering {
-    left: -90px;
-    top: 45%;
   }
 
   .contact__grid-container {

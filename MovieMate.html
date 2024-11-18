@@ -12,17 +12,18 @@
         href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,200;1,400;1,600&display=swap"
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Rozha+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
     <link rel="stylesheet" type="text/css" href="css/normalization.css">
     <link rel="stylesheet" type="text/css" href="css/style.production.css">
-    <link rel="stylesheet" type="text/css" href="css/moviemate.css">
+    <link rel="stylesheet" type="text/css" href="css/moviemate.production.css">
 </head>
 
 <body>
     <header>
-        <a href="index.html#"><img class="header-item" src="images/header-text-logo.gif"
-                alt="Lena Chatziastros Logo"></a>
+        <a href="index.html#"><img class="header-item" data-aos="fade-right" data-aos-duration="800"
+                src="images/header-text-logo.gif" alt="Lena Chatziastros Logo"></a>
         <nav class="header-item">
-            <ul role="navigation" class="navigation-list">
+            <ul role="navigation" class="navigation-list" data-aos="fade" data-aos-duration="800">
                 <li role="navigation">
                     <a href="index.html#about" role="menuitem">About</a>
                 </li>
@@ -44,7 +45,7 @@
             <h1 class="bg-heading bg-heading-intro">MovieMate</h1>
             <h2 class="bg-sub-heading bg-sub-heading-intro">Case Study</h2>
             <div class="intro__text-container">
-                <div class="intro__image-container">
+                <div class="intro__image-container" data-aos="fade-up" data-aos-duration="800">
                     <img src="images/moviemate-img.png" alt="">
                 </div>
                 <div>
@@ -68,7 +69,7 @@
                 </div>
                 <div>
                     <h2>Goal</h2>
-                    <p>  
+                    <p>
                         The primary goal was to create a user-friendly platform where users can
                         interact with a dynamic movie database, register for personalized accounts, and save favorite
                         movies.
@@ -83,11 +84,12 @@
                         the user interface, and ensure smooth communication between the client and the server.
                     </p>
                 </div>
-                <button class="button-main intro__button">
+                <button class="button-main intro__button" data-aos="fade-up" data-aos-duration="800">
                     <a href="https://moviemate-online.netlify.app/" target="_blank">See live Project
                     </a>
                 </button>
-                <button class="button-main intro__button">
+                <button class="button-main intro__button" data-aos="fade-up" data-aos-duration="800"
+                    data-aos-delay="50">
                     <a href="https://" target="_blank">Go to GitHub</a>
                 </button>
             </div>
@@ -97,7 +99,7 @@
             <h1 class="bg-heading bg-heading-main">Approach</h1>
             <h2 class="bg-sub-heading">Process</h2>
             <div class="main__grid-container">
-                <div class="main__grid-item1">
+                <div class="main__grid-item1" data-aos="fade-right" data-aos-duration="800">
                     <h2>
                         Backend Development
                     </h2>
@@ -115,9 +117,11 @@
                         views, but I was able to resolve it through careful middleware configuration. <br>
                     </p>
                 </div>
-                <img class="main__image main__grid-item2" src="images/moviemate-userstory-6.png" alt="" onclick="openLightbox(this)">
-                <img class="main__image main__grid-item3" src="images/moviemate-userstory-4.png" alt="" onclick="openLightbox(this)">
-                <div class="main__grid-item4">
+                <img class="main__image main__grid-item2" data-aos="fade-left" data-aos-duration="800"
+                    src="images/moviemate-userstory-6.png" alt="" onclick="openLightbox(this)">
+                <img class="main__image main__grid-item3" data-aos="fade-right" data-aos-duration="800"
+                    src="images/moviemate-userstory-4.png" alt="" onclick="openLightbox(this)">
+                <div class="main__grid-item4" data-aos="fade-left" data-aos-duration="800">
                     <h2>Database and Business Logic</h2>
                     <p>
                         MongoDB served as the NoSQL database, where I designed the schema
@@ -129,7 +133,7 @@
                         correct information was saved.
                     </p>
                 </div>
-                <div class="main__grid-item5">
+                <div class="main__grid-item5" data-aos="fade-right" data-aos-duration="800">
                     <h2>
                         Frontend Development
                     </h2>
@@ -149,18 +153,13 @@
                         and global states. <br>
                     </p>
                 </div>
-                <img class="main__image main__grid-item6" src="images/moviemate-userstory-7.png" alt="" onclick="openLightbox(this)">
-                <img class="main__image main__grid-item7" src="images/moviemate-userstory-8.png" alt="MovieMate App Screenshot"
-                    onclick="openLightbox(this)">
-                <img class="main__image main__grid-item8" src="images/moviemate-userstory-2.png" alt="MovieMate App Screenshot"
-                    onclick="openLightbox(this)">
+                <img class="main__image main__grid-item6" data-aos="fade-left" data-aos-duration="800"
+                    src="images/moviemate-userstory-7.png" alt="" onclick="openLightbox(this)">
+                <img class="main__image main__grid-item7" data-aos="fade-right" data-aos-duration="800"
+                    src="images/moviemate-userstory-8.png" alt="MovieMate App Screenshot" onclick="openLightbox(this)">
+                <img class="main__image main__grid-item8" data-aos="fade-left" data-aos-duration="800"
+                    src="images/moviemate-userstory-2.png" alt="MovieMate App Screenshot" onclick="openLightbox(this)">
             </div>
-            <!-- <div class="main__image-grid-container">
-                <img class="main__image" src="images/moviemate-userstory-8.png" alt="MovieMate App Screenshot"
-                    onclick="openLightbox(this)">
-                <img class="main__image" src="images/moviemate-userstory-10.png" alt="MovieMate App Screenshot"
-                    onclick="openLightbox(this)">
-            </div> -->
             <div id="lightbox" onclick="closeLightbox()">
                 <img id="lightbox-img">
             </div>
@@ -169,7 +168,7 @@
         <div id="conclusion">
             <h1 class="bg-heading bg-heading-conclusion">Results</h1>
             <h2 class="bg-sub-heading bg-sub-heading-conclusion">Conclusion</h2>
-            <div class="conclusion__image-container">
+            <div class="conclusion__image-container" data-aos="fade-up" data-aos-duration="800">
                 <img src="images/moviemate-userstory-phone.png" alt="MovieMate App Screenshot on mobile device">
             </div>
             <div class="conclusion__text-container">
@@ -221,6 +220,10 @@
         function closeLightbox() {
             document.getElementById("lightbox").style.display = "none";
         }
+    </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
     </script>
 </body>
 

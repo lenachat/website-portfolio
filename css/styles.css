@@ -102,6 +102,15 @@ header {
   padding: 20px;
 }
 
+/* header {
+  position: sticky;
+  top: 0;
+  background-color: var(--secondary-bg-color);
+  z-index: 1000;
+  width: 100%;
+  box-shadow: 0 3px 8px -2px rgb(187, 187, 187);
+} */
+
 .header-item {
   flex: 0 1 200px;
 }
@@ -273,6 +282,7 @@ nav.header-item {
   z-index: 2;
   width: 80%;
   padding: 20px;
+  margin-top: 50px;
 }
 
 .about__grid-container-bottom {
@@ -290,7 +300,7 @@ nav.header-item {
   position: absolute;
   left: -110px;
   top: 280px;
-  transform: rotate(90deg) translateY(-50%);
+  transform: rotate(90deg);
   letter-spacing: 8px;
   font-size: 1rem;
   z-index: 3;
@@ -298,14 +308,15 @@ nav.header-item {
 
 .about__text-container {
   text-align: justify;
-  margin-top: 80px;
+  margin-top: 10px;
   padding: 10px;
 }
 
 .about__image {
   position: relative;
   width: 90%;
-  top: 50px;
+  border-radius: 10px;
+
   z-index: 1;
 }
 
@@ -352,7 +363,7 @@ nav.header-item {
   position: absolute;
   left: -115px;
   top: 130px;
-  transform: rotate(90deg) translateY(-50%);
+  transform: rotate(90deg);
   letter-spacing: 8px;
   font-size: 1rem;
   z-index: 3;
@@ -472,7 +483,7 @@ nav.header-item {
   position: absolute;
   left: -110px;
   top: 10%;
-  transform: rotate(90deg) translateY(-50%);
+  transform: rotate(90deg);
   letter-spacing: 8px;
   font-size: 1rem;
   z-index: 3;
@@ -526,7 +537,7 @@ nav.header-item {
   position: absolute;
   left: -130px;
   top: 40%;
-  transform: rotate(90deg) translateY(-50%);
+  transform: rotate(90deg);
   letter-spacing: 8px;
   font-size: 1rem;
   z-index: 3;
@@ -676,11 +687,6 @@ textarea:focus {
 
   .projects__description-container {
     order: 2;
-  }
-
-  .home__vertical-lettering {
-    left: -90px;
-    top: 45%;
   }
 
   .contact__grid-container {

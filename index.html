@@ -12,15 +12,17 @@
         href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,200;1,400;1,600&display=swap"
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Rozha+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
     <link rel="stylesheet" type="text/css" href="css/normalization.css">
-    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" type="text/css" href="css/style.production.css">
 </head>
 
 <body>
     <header>
-        <a href="#"><img class="header-item" src="images/header-text-logo.gif" alt="Lena Chatziastros Logo"></a>
+        <a href="#"><img class="header-item" data-aos="fade-right" data-aos-duration="800"
+                src="images/header-text-logo.gif" alt="Lena Chatziastros Logo"></a>
         <nav class="header-item">
-            <ul role="navigation" class="navigation-list">
+            <ul role="navigation" class="navigation-list" data-aos="fade" data-aos-duration="800">
                 <li role="navigation">
                     <a href="#about" role="menuitem">About</a>
                 </li>
@@ -40,8 +42,9 @@
     <main>
         <div id="home">
             <div class="home__grid-container">
-                <img class="home__picture" src="images/portrait-full.jpeg" alt="Lena Chatziastros Portrait">
-                <div class="home__text-container">
+                <img class="home__picture" data-aos="zoom-in" data-aos-duration="800" src="images/portrait-full.jpeg"
+                    alt="Lena Chatziastros Portrait">
+                <div class="home__text-container" data-aos="fade-up" data-aos-duration="800">
                     <h1 class="home__greeting">Hey there!</h1>
                     <p>
                         I'm Lena, a <span class="accent-font-color">Web Developer</span> from
@@ -65,12 +68,13 @@
             <h1 class="bg-heading">About</h1>
             <h2 class="bg-sub-heading">Who I am</h2>
             <div class="about__grid-container-top">
+                <div class="about__vertical-lettering">
+                    <span>ABOUT
+                        <hr class="hr-primary">
+                    </span>
+                </div>
                 <div class="about__text-container">
-                    <div class="about__vertical-lettering">
-                        <span>ABOUT
-                            <hr class="hr-primary">
-                        </span>
-                    </div>
+
                     <h2>My Background</h2>
                     <p>
                         My path into tech began with my studies in <strong>physics</strong>, where I developed an
@@ -102,11 +106,11 @@
                         teachers to deepen their subject expertise.
                     </p>
                 </div>
-                <img class="about__image" src="images/IMG_5764.jpeg" alt="">
+                <img class="about__image" data-aos="fade-up" data-aos-duration="800" src="images/IMG_5764.jpeg" alt="Picture from Astronomy Day in Tanzania">
             </div>
         </div>
         <div class="about__grid-container-bottom">
-            <img src="images/laptop-photo-small.png" alt="" style="width: 80%;">
+            <img src="images/laptop-photo-small.png" class="about__image" data-aos="zoom-in" alt="Picture of a Laptop" style="width: 80%;">
             <div>
                 <h2>Why I became a Developer</h2>
                 <p>
@@ -142,7 +146,7 @@
                     </span>
                 </div>
 
-                <div class="projects__grid-item">
+                <div class="projects__grid-item" data-aos="fade-right" data-aos-duration="800">
                     <div class="projects__description-container">
                         <h2>MovieMate</h2>
                         <p onclick="window.location.href='MovieMate.html'">
@@ -171,7 +175,7 @@
                     </div>
                 </div>
 
-                <div class="projects__grid-item">
+                <div class="projects__grid-item" data-aos="fade-left" data-aos-duration="800">
                     <div class="projects__image-container">
                         <img src="images/myflix-img.png" alt="MyFlix App Image">
                     </div>
@@ -193,7 +197,7 @@
                     </div>
                 </div>
 
-                <div class="projects__grid-item">
+                <div class="projects__grid-item" data-aos="fade-right" data-aos-duration="800">
                     <div class="projects__description-container">
                         <h2>Eventory</h2>
                         <p>
@@ -219,7 +223,7 @@
                     </div>
                 </div>
 
-                <div class="projects__grid-item">
+                <div class="projects__grid-item" data-aos="fade-left" data-aos-duration="800">
                     <div class="projects__image-container">
                         <div class="chatterbox-images">
                             <img src="images/chatterbox-img1.png" alt="ChatterBox App Image">
@@ -244,7 +248,7 @@
                     </div>
                 </div>
 
-                <div class="projects__grid-item">
+                <div class="projects__grid-item" data-aos="fade-right" data-aos-duration="800">
                     <div class="projects__description-container">
                         <h2>Pokedex</h2>
                         <p>
@@ -268,7 +272,7 @@
                     </div>
                 </div>
 
-                <div class="projects__grid-item">
+                <div class="projects__grid-item" data-aos="fade-left" data-aos-duration="800">
                     <div class="projects__image-container">
                         <img src="images/rock-paper-scissors-img.png" alt="Rock Paper Scissors App Image">
                     </div>
@@ -309,67 +313,67 @@
                         <div class="skills__grid-item">
                             <p>Languages</p>
                             <ul>
-                                <li>HTML</li>
-                                <li>CSS</li>
-                                <li>JavaScript</li>
-                                <li>TypeScript</li>
-                                <li>Python</li>
+                                <li data-aos="fade-up" data-aos-duration="800">HTML</li>
+                                <li data-aos="fade-up" data-aos-duration="800" data-aos-delay="50">CSS</li>
+                                <li data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">JavaScript</li>
+                                <li data-aos="fade-up" data-aos-duration="800" data-aos-delay="150">TypeScript</li>
+                                <li data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">Python</li>
                             </ul>
                         </div>
                         <div class="skills__grid-item">
                             <p>Libraries &amp; Frameworks</p>
                             <ul>
-                                <li>React</li>
-                                <li>Recharts</li>
-                                <li>Angular</li>
-                                <li>Angular-Material</li>
-                                <li>Bootstrap</li>
-                                <li>jQuery</li>
-                                <li>React Native</li>
-                                <li>Expo</li>
+                                <li data-aos="fade-up" data-aos-duration="800">React</li>
+                                <li data-aos="fade-up" data-aos-duration="800" data-aos-delay="50">Recharts</li>
+                                <li data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">Angular</li>
+                                <li data-aos="fade-up" data-aos-duration="800" data-aos-delay="150">Angular-Material</li>
+                                <li data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">Bootstrap</li>
+                                <li data-aos="fade-up" data-aos-duration="800" data-aos-delay="250">jQuery</li>
+                                <li data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">React Native</li>
+                                <li data-aos="fade-up" data-aos-duration="800" data-aos-delay="350">Expo</li>
                             </ul>
                         </div>
                         <div class="skills__grid-item">
                             <p>Backend &amp; Databases</p>
                             <ul>
-                                <li>RESTful APIs</li>
-                                <li>NodeJS</li>
-                                <li>Express</li>
-                                <li>MongoDB</li>
-                                <li>PostgreSQL</li>
-                                <li>Firebase</li>
-                                <li>AWS cloud computing</li>
-                                <li>Render</li>
-                                <li>Netlify</li>
+                                <li data-aos="fade-up" data-aos-duration="800">RESTful APIs</li>
+                                <li data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">NodeJS</li>
+                                <li data-aos="fade-up" data-aos-duration="800" data-aos-delay="150">Express</li>
+                                <li data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">MongoDB</li>
+                                <li data-aos="fade-up" data-aos-duration="800" data-aos-delay="250">PostgreSQL</li>
+                                <li data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">Firebase</li>
+                                <li data-aos="fade-up" data-aos-duration="800" data-aos-delay="350">AWS cloud computing</li>
+                                <li data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">Render</li>
+                                <li data-aos="fade-up" data-aos-duration="800" data-aos-delay="450">Netlify</li>
                             </ul>
                         </div>
                         <div class="skills__grid-item">
                             <p>Testing &amp; Documenting</p>
                             <ul>
-                                <li>Postman</li>
-                                <li>Jest</li>
-                                <li>Cucumber</li>
-                                <li>Puppeteer</li>
-                                <li>JSDoc</li>
-                                <li>TypeDoc</li>
-                                <li>Chrome Dev Tools</li>
-                                <li>Xcode Simulator</li>
-                                <li>Atatus</li>
+                                <li data-aos="fade-up" data-aos-duration="800">Postman</li>
+                                <li data-aos="fade-up" data-aos-duration="800" data-aos-delay="50">Jest</li>
+                                <li data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">Cucumber</li>
+                                <li data-aos="fade-up" data-aos-duration="800" data-aos-delay="150">Puppeteer</li>
+                                <li data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">JSDoc</li>
+                                <li data-aos="fade-up" data-aos-duration="800" data-aos-delay="250">TypeDoc</li>
+                                <li data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">Chrome Dev Tools</li>
+                                <li data-aos="fade-up" data-aos-duration="800" data-aos-delay="350">Xcode Simulator</li>
+                                <li data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">Atatus</li>
                             </ul>
                         </div>
                         <div class="skills__grid-item">
                             <p>Tools &amp; Workflow</p>
                             <ul>
-                                <li>Git</li>
-                                <li>GitHub</li>
-                                <li>Trello</li>
-                                <li>Ora</li>
-                                <li>Figma</li>
-                                <li>Canva</li>
-                                <li>VS Code</li>
-                                <li>SCRUM</li>
-                                <li>Agile</li>
-                                <li>User Stories</li>
+                                <li data-aos="fade-up" data-aos-duration="800">Git</li>
+                                <li data-aos="fade-up" data-aos-duration="800" data-aos-delay="50">GitHub</li>
+                                <li data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">Trello</li>
+                                <li data-aos="fade-up" data-aos-duration="800" data-aos-delay="150">Ora</li>
+                                <li data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">Figma</li>
+                                <li data-aos="fade-up" data-aos-duration="800" data-aos-delay="250">Canva</li>
+                                <li data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">VS Code</li>
+                                <li data-aos="fade-up" data-aos-duration="800" data-aos-delay="350">SCRUM</li>
+                                <li data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">Agile</li>
+                                <li data-aos="fade-up" data-aos-duration="800" data-aos-delay="450">User Stories</li>
                             </ul>
                         </div>
                     </div>
@@ -451,6 +455,11 @@
         <p class="copyright">&copy; 2024 Lena Chatziastros. All rights reserved.</p>
         <a href="impressum.html">Impressum</a>
     </footer>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
