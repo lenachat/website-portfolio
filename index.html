@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
     <link rel="stylesheet" type="text/css" href="css/normalization.css">
     <link rel="stylesheet" type="text/css" href="css/style.production.css">
+    <script type="text/javascript" src="js/script.js" defer></script>
 </head>
 
 <body>
@@ -61,6 +62,13 @@
                         <br>
                         When I'm not in front of my computer, you'll find me outdoors!
                     </p>
+                    <br>
+                    <a href="ext-files/LenaChatziastros_Resume.pdf" download
+                        style="text-decoration: underline; padding: 1px;">Download my
+                        CV</a>
+                    <br>
+                    <br>
+                    <br>
                     <button class="button-main"><a href="#contact">Get in Touch</a></button>
                 </div>
             </div>
@@ -151,75 +159,204 @@
                     </span>
                 </div>
 
-                <div class="projects__grid-item" data-aos="fade-right" data-aos-duration="800">
+                <div class="projects__grid-item" onclick="openModal('MovieMate')" data-aos="fade-right"
+                    data-aos-duration="800">
                     <div class="projects__description-container">
                         <h2>MovieMate</h2>
-                        <p onclick="window.location.href='MovieMate.html'">
-                            A full-stack web application, built using the MERN stack
+                        <p>
+                            A full-stack web application that allows users to discover movies,
+                            create favorite lists, and create and manage profiles.
+                        </p>
+                        <ul>
+                            <li data-aos="fade-up" data-aos-duration="800">React</li>
+                            <li data-aos="fade-up" data-aos-duration="800" data-aos-delay="50">JavaScript</li>
+                            <li data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">Node.js</li>
+                            <li data-aos="fade-up" data-aos-duration="800" data-aos-delay="150">Express</li>
+                            <li data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">MongoDB</li>
+                            <li data-aos="fade-up" data-aos-duration="800" data-aos-delay="250">Postman</li>
+                            <li data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">Render</li>
+                            <li data-aos="fade-up" data-aos-duration="800" data-aos-delay="350">Netlify</li>
+
+                        </ul>
+                        <a href="https://moviemate-online.netlify.app/" target="_blank">
+                            <div class="projects__live-link">
+                                <hr class="hr-accent">
+                                <span class="accent-font-color">See live demo</span>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="projects__image-container">
+                        <img src="images/moviemate-img.png" alt="MovieMate App Image">
+                    </div>
+                </div>
+
+                <div id="MovieMate-modal" class="modal">
+                    <div class="modal-content">
+                        <span class="close" onclick="closeModal('MovieMate')">&times;</span>
+                        <h1>MovieMate - Project Overview</h1>
+                        <div class="projects__image-container">
+                            <img src="images/moviemate-img.png" alt="MovieMate App Image">
+                        </div>
+                        <div class="modal-button-container">
+                            <button class="button-main"><a href="MovieMate.html">Case Study</a></button>
+                            <button class="button-main"><a href="https://moviemate-online.netlify.app/"
+                                    target="_blank">Live Demo</a></button>
+                            <button class="button-main"><a href="https://github.com/lenachat/movie_api"
+                                    target="_blank">Project on GitHub</a></button>
+                        </div>
+                        <p class="modal-text">
+                            MovieMate is a full-stack web application, built using the MERN stack
                             (<strong>MongoDB</strong>, <strong>Express</strong>, <strong>React</strong>,
                             <strong>Node.js</strong>). The movie app allows users to explore information
                             about
                             various movies,
                             create a list of favorite movies, and manage their profiles.
-                            <br>
-                            <a href="MovieMate.html">
-                                <p>> More details</p>
-                            </a>
+                        <h2>Features:</h2>
+                        <ul>
+                            <li><strong>Login / Signup View:</strong> Users are able to login or signup with their
+                                personal account.</li>
+                            <li><strong>Movie View:</strong> All movies from the database are shown with an image, title
+                                and description.</li>
+                            <li><strong>Signle Movie View:</strong> Details to each movies can be accessed including
+                                genre description, director biography, actors, rating, ...</li>
+                            <li><strong>Profile View:</strong> Users can see and manage their list of favorite movies,
+                                update their user data or delete their account.</li>
+                        </ul>
+                        <h2>Technologies:</h2>
+                        <ul>
+                            <li>JavaScript</li>
+                            <li>Node.js</li>
+                            <li>Express</li>
+                            <li>MongoDB</li>
+                            <li>Mongoose</li>
+                            <li>JWT authentication</li>
+                            <li>RESTful API</li>
+                            <li>Postman</li>
+                            <li>Render</li>
+                            <li>JSDoc</li>
+                            <li>React</li>
+                            <li>React Bootstrap</li>
+                            <li>Parcel</li>
+                            <li>Netlify</li>
+                        </ul>
                         </p>
-
-                        <a href="https://moviemate-online.netlify.app/" target="_blank">
-                            <div class="projects__live-link">
-                                <hr class="hr-accent">
-                                <span class="accent-font-color">See live project</span>
-                            </div>
-                        </a>
-                    </div>
-
-                    <div class="projects__image-container" onclick="window.location.href='MovieMate.html'">
-                        <img src="images/moviemate-img.png" alt="MovieMate App Image">
+                        <div class="modal-button-container">
+                            <button class="button-main"><a href="MovieMate.html">Case Study</a></button>
+                            <button class="button-main"><a href="https://moviemate-online.netlify.app/"
+                                    target="_blank">Live Demo</a></button>
+                            <button class="button-main"><a href="https://github.com/lenachat/movie_api"
+                                    target="_blank">Project on GitHub</a></button>
+                        </div>
                     </div>
                 </div>
 
-                <div class="projects__grid-item" data-aos="fade-left" data-aos-duration="800">
+                <div class="projects__grid-item" onclick="openModal('MyFlix')" data-aos="fade-left"
+                    data-aos-duration="800">
                     <div class="projects__image-container">
                         <img src="images/myflix-img.png" alt="MyFlix App Image">
                     </div>
                     <div class="projects__description-container">
                         <h2>MyFlix</h2>
                         <p>
-                            A single-page movie app built with <strong>Angular</strong>, offering users an
-                            interactive platform to explore movie details, directors, and genres.
-                            This project features a responsive UI designed with <strong>Angular-Material</strong>
-                            and includes comprehensive documentation created using <strong>TypeDoc</strong>.
+                            A single-page movie app built with Angular, featuring responsive design with
+                            Angular-Material, powered by the MovieMate backend.
                         </p>
+                        <ul>
+                            <li data-aos="fade-up" data-aos-duration="800">TypeScript</li>
+                            <li data-aos="fade-up" data-aos-duration="800" data-aos-delay="50">Angular</li>
+                            <li data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">Angular-Material</li>
+                            <li data-aos="fade-up" data-aos-duration="800" data-aos-delay="150">Express</li>
+                            <li data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">MongoDB</li>
+                            <li data-aos="fade-up" data-aos-duration="800" data-aos-delay="250">Postman</li>
+                            <li data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">Render</li>
+                            <li data-aos="fade-up" data-aos-duration="800" data-aos-delay="350">Netlify</li>
 
+                        </ul>
                         <a href="https://lenachat.github.io/myFlix-Angular-client" target="_blank">
                             <div class="projects__live-link">
                                 <hr class="hr-accent">
-                                <span class="accent-font-color">See live project</span>
+                                <span class="accent-font-color">See live demo</span>
                             </div>
                         </a>
                     </div>
                 </div>
 
-                <div class="projects__grid-item" data-aos="fade-right" data-aos-duration="800">
+                <div id="MyFlix-modal" class="modal">
+                    <div class="modal-content">
+                        <span class="close" onclick="closeModal('MyFlix')">&times;</span>
+                        <h1>MyFlix - Project Overview</h1>
+                        <div class="projects__image-container">
+                            <img src="images/myflix-img.png" alt="MyFlix App Image">
+                        </div>
+                        <div class="modal-button-container">
+                            <button class="button-main"><a
+                                    href="https://lenachat.github.io/myFlix-Angular-client/#/welcome"
+                                    target="_blank">Live Demo</a></button>
+                            <button class="button-main"><a href="https://github.com/lenachat/myFlix-Angular-client"
+                                    target="_blank">Project on GitHub</a></button>
+                        </div>
+                        <p class="modal-text">
+                            MyFlix is a single-page movie app built with <strong>Angular CLI</strong>, offering users an
+                            interactive platform to explore movie details, directors, and genres, by utilizing the
+                            backend of the MovieMate app.
+                            This project features a responsive UI designed with <strong>Angular-Material</strong>
+                            and includes comprehensive documentation created using <strong>TypeDoc</strong>.
+                        <h2>Features:</h2>
+                        <ul>
+                            <li><strong>Login / Signup View:</strong> Users are able to login or signup with their
+                                personal account.</li>
+                            <li><strong>Movie View:</strong> All movies from the database are shown with an image, title
+                                and description.</li>
+                            <li><strong>Signle Movie View:</strong> Details to each movies can be accessed including
+                                genre description, director biography, actors, rating, ...</li>
+                            <li><strong>Profile View:</strong> Users can see and manage their list of favorite movies,
+                                update their user data or delete their account.</li>
+                        </ul>
+                        <h2>Technologies:</h2>
+                        <ul>
+                            <li>TypeScript</li>
+                            <li>Angular</li>
+                            <li>Angular-Material</li>
+                            <li>TypeDoc</li>
+                        </ul>
+                        </p>
+                        <div class="modal-button-container">
+                            <button class="button-main"><a
+                                    href="https://lenachat.github.io/myFlix-Angular-client/#/welcome"
+                                    target="_blank">Live Demo</a></button>
+                            <button class="button-main"><a href="https://github.com/lenachat/myFlix-Angular-client"
+                                    target="_blank">Project on GitHub</a></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="projects__grid-item" onclick="openModal('Eventory')" data-aos="fade-right"
+                    data-aos-duration="800">
                     <div class="projects__description-container">
                         <h2>Eventory</h2>
                         <p>
-                            A <strong>serverless</strong> progressive web application built with <strong>React</strong>,
-                            featuring <strong>test-driven
-                                development</strong>, that utilizes the Google Calendar API to display upcoming events
-                            in various
-                            cities, offering
-                            offline
-                            functionality,
-                            data visualization, and a responsive, cross-platform user experience.
+                            A serverless progressive web app that helps users explore events across cities with data
+                            visuaization and offline functionality.
                         </p>
+
+                        <ul>
+                            <li data-aos="fade-up" data-aos-duration="800">React</li>
+                            <li data-aos="fade-up" data-aos-duration="800" data-aos-delay="50">Recharts</li>
+                            <li data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">AWS Lambda</li>
+                            <li data-aos="fade-up" data-aos-duration="800" data-aos-delay="150">Service Workers</li>
+                            <li data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">Test-driven Development
+                            </li>
+                            <li data-aos="fade-up" data-aos-duration="800" data-aos-delay="250">Jest</li>
+                            <li data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">Cucumber</li>
+                            <li data-aos="fade-up" data-aos-duration="800" data-aos-delay="350">Puppeteer</li>
+                            <li data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">Atatus</li>
+                        </ul>
 
                         <a href="https://lenachat.github.io/Eventory" target="_blank">
                             <div class="projects__live-link">
                                 <hr class="hr-accent">
-                                <span class="accent-font-color">See live project</span>
+                                <span class="accent-font-color">See live demo</span>
                             </div>
                         </a>
                     </div>
@@ -228,7 +365,71 @@
                     </div>
                 </div>
 
-                <div class="projects__grid-item" data-aos="fade-left" data-aos-duration="800">
+                <div id="Eventory-modal" class="modal">
+                    <div class="modal-content">
+                        <span class="close" onclick="closeModal('Eventory')">&times;</span>
+                        <h1>Eventory - Project Overview</h1>
+                        <div class="projects__image-container">
+                            <img src="images/eventory-img.png" alt="Eventory App Image">
+                        </div>
+                        <div class="modal-button-container">
+                            <button class="button-main"><a href="https://lenachat.github.io/Eventory"
+                                    target="_blank">Live Demo</a></button>
+                            <button class="button-main"><a href="https://github.com/lenachat/Eventory"
+                                    target="_blank">Project on GitHub</a></button>
+                        </div>
+                        <p class="modal-text">
+                            Eventory is a <strong>serverless</strong> progressive web application built with
+                            <strong>React</strong>,
+                            developed using a <strong>test-driven
+                                development</strong> approach. The <strong>Google Calendar API</strong> is utilized to
+                            display upcoming events
+                            in various
+                            cities, offering
+                            offline
+                            functionality,
+                            data visualization, and a responsive, cross-platform user experience.
+                        <h2>Features:</h2>
+                        <ul>
+                            <li><strong>Authentication:</strong> Users authentication via Google Calendar API and OAuth2
+                                authentication flow.</li>
+                            <li><strong>Filter Events by City:</strong> Users can search for events in specific cities
+                                and show/hide event details as needed.</li>
+                            <li><strong>Event Limitation:</strong> Specify the number of events displayed to suit user
+                                preferences.</li>
+                            <li><strong>Data visualization:</strong> Interactive charts provide insights into event
+                                genres and locations.</li>
+                            <li><strong>Offline Functionality:</strong> The app works offline or in slow network
+                                conditions using local storage and a service worker.</li>
+                            <li><strong>App Installation:</strong> Users can add the app to their home screen on mobile
+                                or install it on desktop.</li>
+                            <li><strong>Offline monitoring tool:</strong> Integrated with Atatus for monitoring and
+                                optimizing app performance.</li>
+                        </ul>
+                        <h2>Technologies:</h2>
+                        <ul>
+                            <li>React</li>
+                            <li>Recharts</li>
+                            <li>AWS Lambda</li>
+                            <li>Service Workers</li>
+                            <li>Test-Driven Development (TDD)</li>
+                            <li>Jest</li>
+                            <li>Cucumber</li>
+                            <li>Puppeteer</li>
+                            <li>Atatus</li>
+                        </ul>
+                        </p>
+                        <div class="modal-button-container">
+                            <button class="button-main"><a href="https://lenachat.github.io/Eventory"
+                                    target="_blank">Live Demo</a></button>
+                            <button class="button-main"><a href="https://github.com/lenachat/Eventory"
+                                    target="_blank">Project on GitHub</a></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="projects__grid-item" onclick="openModal('ChatterBox')" data-aos="fade-left"
+                    data-aos-duration="800">
                     <div class="projects__image-container">
                         <div class="chatterbox-images">
                             <img src="images/chatterbox-img1.png" alt="ChatterBox App Image">
@@ -238,24 +439,83 @@
                     <div class="projects__description-container">
                         <h2>ChatterBox</h2>
                         <p>
-                            A mobile chat app built with <strong>React Native</strong> and <strong>Expo</strong>,
-                            allowing users to exchange messages, share images, and send their location in real-time.
-                            The app integrates <strong>Firebase</strong> for anonymous authentication, real-time data
-                            storage,
-                            and offline message access to ensure a seamless chatting experience.
+                            A mobile chat app built with React Native and Expo, enabling real-time messaging, image
+                            sharing, and location sending.
                         </p>
+                        <ul>
+                            <li data-aos="fade-up" data-aos-duration="800">React Native</li>
+                            <li data-aos="fade-up" data-aos-duration="800" data-aos-delay="50">Expo</li>
+                            <li data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">Gifted Chat</li>
+                            <li data-aos="fade-up" data-aos-duration="800" data-aos-delay="150">Firebase Firestore</li>
+                            <li data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">Firebase Cloud Storage
+                            </li>
+                            <li data-aos="fade-up" data-aos-duration="800" data-aos-delay="250">Google Firebase
+                                Authentication</li>
+                            <li data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">Xcode Simulator</li>
+                        </ul>
                         <a href="https://github.com/lenachat/chatterBox">
                             <div class="projects__live-link">
                                 <hr class="hr-accent">
-                                <span class="accent-font-color">See live project</span>
+                                <span class="accent-font-color">See live demo</span>
                             </div>
                         </a>
                     </div>
                 </div>
 
-                <div class="projects__grid-item" data-aos="fade-right" data-aos-duration="800">
+                <div id="ChatterBox-modal" class="modal">
+                    <div class="modal-content">
+                        <span class="close" onclick="closeModal('ChatterBox')">&times;</span>
+                        <h1>ChatterBox - Project Overview</h1>
+                        <div class="projects__image-container chatterbox-modal-images">
+                            <img src="images/chatterbox-img1.png" alt="ChatterBox App Image">
+                            <img src="images/chatterbox-img2.png" alt="ChatterBox App Image">
+                        </div>
+                        <div class="modal-button-container">
+                            <button class="button-main"><a href="https://github.com/lenachat/chatterBox"
+                                    target="_blank">Project on GitHub</a></button>
+                        </div>
+                        <p class="modal-text">
+                            ChatterBox is a mobile chat app built with <strong>React Native</strong> and
+                            <strong>Expo</strong>,
+                            allowing users to exchange messages, share images, and send their location in real-time.
+                            The app integrates <strong>Firebase</strong> for anonymous authentication, real-time data
+                            storage,
+                            and offline message access to ensure a seamless chatting experience.
+                        <h2>Features:</h2>
+                        <ul>
+                            <li><strong>User Customiszation:</strong> Users can enter their name and choose a background
+                                color for their chat screen before starting a conversation.</li>
+                            <li><strong>Messaging Interface:</strong> The app provides a chat interface with an input
+                                field and send button for exchanging messages.</li>
+                            <li><strong>Media Sharing:</strong> Users can send images directly from their device's
+                                gallery or take photos with the device's camera.</li>
+                            <li><strong>Location Sharing:</strong> Real-time location sharing is supported, displayed in
+                                the chat as a map view.</li>
+                            <li><strong>Offline Functionality:</strong> Conversations are stored both locally and online
+                                to ensure functionality even when offline.</li>
+                        </ul>
+                        <h2>Technologies:</h2>
+                        <ul>
+                            <li>React Native</li>
+                            <li>Expo</li>
+                            <li>Gifted Chat</li>
+                            <li>Firebase Firestore</li>
+                            <li>Firebase Cloud Storage</li>
+                            <li>Google Firebase Authentication</li>
+                            <li>Xcode Simulator</li>
+                        </ul>
+                        </p>
+                        <div class="modal-button-container">
+                            <button class="button-main"><a href="https://github.com/lenachat/chatterBox"
+                                    target="_blank">Project on GitHub</a></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="projects__grid-item" onclick="openModal('Pokedex')" data-aos="fade-right"
+                    data-aos-duration="800">
                     <div class="projects__description-container">
-                        <h2>Pokedex</h2>
+                        <h2>Pok&eacute;dex</h2>
                         <p>
                             An interactive <strong>JavaScript</strong> web application that showcases a list of Pokémon
                             using data
@@ -264,39 +524,155 @@
                             external API,
                             styled with <strong>Bootstrap</strong>.
                         </p>
-
+                        <ul>
+                            <li data-aos="fade-up" data-aos-duration="800">HTML</li>
+                            <li data-aos="fade-up" data-aos-duration="800" data-aos-delay="50">CSS</li>
+                            <li data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">JavaScript</li>
+                            <li data-aos="fade-up" data-aos-duration="800" data-aos-delay="150">Bootstrap</li>
+                            <li data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">Pok&eacute;dex API</li>
+                        </ul>
                         <a href="https://lenachat.github.io/Pokedex-application/" target="_blank">
                             <div class="projects__live-link">
                                 <hr class="hr-accent">
-                                <span class="accent-font-color">See live project</span>
+                                <span class="accent-font-color">See live demo</span>
                             </div>
                         </a>
                     </div>
                     <div class="projects__image-container">
-                        <img src="images/pokedex-img.png" alt="Pokedex App Image">
+                        <img src="images/pokedex-img.png" alt="Pok&eacute;dex App Image">
                     </div>
                 </div>
 
-                <div class="projects__grid-item" data-aos="fade-left" data-aos-duration="800">
+                <div id="Pokedex-modal" class="modal">
+                    <div class="modal-content">
+                        <span class="close" onclick="closeModal('Pokedex')">&times;</span>
+                        <h1>Pok&eacute;dex - Project Overview</h1>
+                        <div class="projects__image-container">
+                            <img src="images/pokedex-img.png" alt="Pok&eacute;dex App Image">
+                        </div>
+                        <div class="modal-button-container">
+                            <button class="button-main"><a href="https://lenachat.github.io/Pokedex-application/"
+                                    target="_blank">
+                                    Live Demo</a>
+                            </button>
+                            <button class="button-main"><a href="https://github.com/lenachat/Pokedex-application"
+                                    target="_blank">
+                                    Project on GitHub</a>
+                            </button>
+                        </div>
+                        <p class="modal-text">
+                            Pok&eacute;dex is an interactive <strong>JavaScript</strong> web application that that
+                            allows users to explore a
+                            list of Pokémon fetched from an external API.
+                            The app features a responsive design styled with Bootstrap, ensuring a seamless experience
+                            across all devices. Users can view detailed information about each Pokémon, including its
+                            type, dimensions, and abilities.
+                        <h2>Features:</h2>
+                        <ul>
+                            <li><strong>Pok&eacute;mon List:</strong> Browse a complete list of Pokémon in the main
+                                view, each displayed with an image and its name.</li>
+                            <li><strong>Pok&eacute;mon Details:</strong> Click on a Pokémon to open an interactive modal
+                                showing detailed information, including its type and other attributes.</li>
+                            <li><strong>Search Functionality:</strong> Use the search field in the header to find
+                                Pokémon by name effortlessly.</li>
+                        </ul>
+                        <h2>Technologies:</h2>
+                        <ul>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                            <li>Bootstrap</li>
+                            <li>Pok&eacute;dex API</li>
+                        </ul>
+                        </p>
+                        <div class="modal-button-container">
+                            <button class="button-main"><a href="https://lenachat.github.io/Pokedex-application/"
+                                    target="_blank">
+                                    Live Demo</a>
+                            </button>
+                            <button class="button-main"><a href="https://github.com/lenachat/Pokedex-application"
+                                    target="_blank">
+                                    Project on GitHub</a>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="projects__grid-item" onclick="openModal(RockPaper)" data-aos="fade-left"
+                    data-aos-duration="800">
                     <div class="projects__image-container">
                         <img src="images/rock-paper-scissors-img.png" alt="Rock Paper Scissors App Image">
                     </div>
                     <div class="projects__description-container">
                         <h2>Rock Paper Scissors</h2>
                         <p>
-                            An interactive <strong>JavaScript</strong> web application that lets users play the classic
+                            Play the classic Rock Paper Scissors game against the computer with dynamic visuals and
+                            real-time score tracking.
+                        </p>
+                        <ul>
+                            <li data-aos="fade-up" data-aos-duration="800">HTML</li>
+                            <li data-aos="fade-up" data-aos-duration="800" data-aos-delay="50">CSS</li>
+                            <li data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">JavaScript</li>
+                        </ul>
+                        <a href="https://lenachat.github.io/rock-paper-scissors-game" target="_blank">
+                            <div class="projects__live-link">
+                                <hr class="hr-accent">
+                                <span class="accent-font-color">See live demo</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div id="RockPaper-modal" class="modal">
+                    <div class="modal-content">
+                        <span class="close" onclick="closeModal('RockPaper')">&times;</span>
+                        <h1>Rock Paper Scissors - Project Overview</h1>
+                        <div class="projects__image-container">
+                            <img src="images/rock-paper-scissors-img.png" alt="Rock Paper Scissors App Image">
+                        </div>
+                        <div class="modal-button-container">
+                            <button class="button-main"><a href="https://lenachat.github.io/rock-paper-scissors-game"
+                                    target="_blank">
+                                    Live Demo</a>
+                            </button>
+                            <button class="button-main"><a href="https://github.com/lenachat/rock-paper-scissors-game"
+                                    target="_blank">
+                                    Project on GitHub</a>
+                            </button>
+                        </div>
+                        <p class="modal-text">
+                            Rock Paper Scissors is an interactive <strong>JavaScript</strong> web application that lets
+                            users play the classic
                             Rock Paper
                             Scissors
                             game
                             against the computer, featuring dynamic visuals and real-time score tracking.
+                        <h2>Features:</h2>
+                        <ul>
+                            <li><strong>Choose your Move:</strong> Players can pick Rock, Paper, or Scissors to compete
+                                against the computer.</li>
+                            <li><strong>Live Score Tracking:</strong> The score updates in real-time for both the player
+                                and the computer.</li>
+                            <li><strong>Winning Condition:</strong> The game ends when either the player or the computer
+                                reaches 5 points, with engaging animations and dynamic sound effects to celebrate the
+                                result.</li>
+                        </ul>
+                        <h2>Technologies:</h2>
+                        <ul>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                        </ul>
                         </p>
-
-                        <a href="https://lenachat.github.io/rock-paper-scissors-game" target="_blank">
-                            <div class="projects__live-link">
-                                <hr class="hr-accent">
-                                <span class="accent-font-color">See live project</span>
-                            </div>
-                        </a>
+                        <div class="modal-button-container">
+                            <button class="button-main"><a href="https://lenachat.github.io/rock-paper-scissors-game"
+                                    target="_blank">
+                                    Live Demo</a>
+                            </button>
+                            <button class="button-main"><a href="https://github.com/lenachat/rock-paper-scissors-game"
+                                    target="_blank">
+                                    Project on GitHub</a>
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>
