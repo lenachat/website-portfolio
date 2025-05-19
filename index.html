@@ -87,33 +87,20 @@
 
                     <h2>My Background</h2>
                     <p>
-                        My path into tech began with my studies in <strong>physics</strong>, where I developed an
+                        My path into tech began with my studies in physics, where I developed an
                         appreciation for complex
-                        systems and honed my analytical mindset through coding in <strong>Python</strong>. Physics
-                        taught me to stay curious
-                        and tackle challenges with resilience — skills that prove powerful in web development
+                        systems and sharpened my <strong>analytical mindset</strong> through coding in Python. Physics
+                        taught me to stay <strong>curious</strong>
+                        and tackle challenges with <strong>resilience</strong>, which are skills that prove powerful in
+                        web development
                         on a daily basis.
                         <br>
                         <br>
-                        Beyond the technical side, I bring experience in <strong>tutoring</strong> and <strong>social
-                            media management</strong>.
-                        As a tutor, I learned the value of <strong>clear communication</strong> and
-                        <strong>empathy</strong>, creating study plans
-                        tailored to each student's needs to not only achieve
-                        lasting improvements in their grades, but also boost their confidence. <br>
-                        In my role as a social media manager for the student organization IAESTE, I
-                        <strong>designed</strong> a lasting series of
-                        <strong>engaging posts and interactive stories</strong>, strengthen their online
-                        presence and help them stand out among numerous students organizations.
-                        <br>
-                        <br>
-                        During an international internship in Tanzania, I had the chance to contribute to <strong>STEM
-                            education</strong> for young
-                        girls and
-                        supported teacher development across the country. I co-hosted an interactive Astronomy Day for
-                        over
-                        200 students, sparking curiosity about science, and shared my knowledge of astronomy with
-                        teachers to deepen their subject expertise.
+                        In addition, experiences in tutoring, social media management, and international STEM outreach
+                        have strengthened my <strong>communication</strong>, <strong>creativity</strong>, and
+                        <strong>adaptability</strong>. These qualities complement my
+                        technical skills and help help me encourage team exchange while contributing to a positive and
+                        collaborative work environment.
                     </p>
                 </div>
                 <img class="about__image" data-aos="fade-up" data-aos-duration="800" src="images/IMG_5764.jpeg"
@@ -125,18 +112,18 @@
                 <div>
                     <h2>Why I became a Developer</h2>
                     <p>
-                        Transitioning into web development has been an exciting shift, allowing me to join a field
-                        that's
-                        constantly <strong>evolving</strong> and filled with opportunities for <strong>growth</strong>.
-                        I'm committed to contribute to projects that promote <strong>sustainability</strong>,
+                        Transitioning into web development has been an exciting step, as it allows me to combine my
+                        passion for <strong>creativity</strong> and hands-on work with my admiration for logic and
+                        <strong>structure</strong>.
+                        I'm driven to contribute to projects that promote <strong>sustainability</strong>,
                         <strong>environmental awareness</strong>, and <strong>social justice</strong>.
-                        Through web development, I aim to create applications that engage and inform for a positive
-                        change in the world.
+                        For me, web development is a powerful way to engage people, share knowledge, and
+                        support positive change.
                         <br>
                         <br>
                         While I work well independently, I truly thrive in collaborative environments where we can
-                        support and encourage each other. I value <strong>empathy</strong> and a positive working
-                        culture, as I believe they're
+                        support and encourage each other. I value empathy and a <strong>positive working
+                            culture</strong>, as I believe they're
                         key to creating meaningful work.
                         <br>
                         <br>
@@ -161,6 +148,94 @@
                     <span>PORTFOLIO
                         <hr class="hr-primary">
                     </span>
+                </div>
+
+                <div class="projects__grid-item" onclick="openModal('Lumora')" data-aos="fade-right"
+                    data-aos-duration="800">
+                    <div class="projects__description-container">
+                        <h2>Lumora</h2>
+                        <p>
+                            A progressive web application that enables users to write journal entries online, track
+                            their self-care progress, and access their data seamlessly across multiple devices.
+                        </p>
+                        <ul>
+                            <li data-aos="fade-up" data-aos-duration="800">React</li>
+                            <li data-aos="fade-up" data-aos-duration="800" data-aos-delay="50">TypeScript</li>
+                            <li data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">Redux Toolkit</li>
+                            <li data-aos="fade-up" data-aos-duration="800" data-aos-delay="150">Tailwind CSS</li>
+                            <li data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">shadcn/ui</li>
+                            <li data-aos="fade-up" data-aos-duration="800" data-aos-delay="250">Firebase</li>
+                            <li data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">Vite</li>
+                            <li data-aos="fade-up" data-aos-duration="800" data-aos-delay="350">Node.js</li>
+                        </ul>
+                        <a href="https://lumora-online-journal.web.app/" target="_blank">
+                            <div class="projects__live-link">
+                                <hr class="hr-accent">
+                                <span class="accent-font-color">See live demo</span>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="projects__image-container">
+                        <img src="images/lumora-img.png" alt="Lumora App Image">
+                    </div>
+                </div>
+
+                <div id="Lumora-modal" class="modal">
+                    <div class="modal-content">
+                        <span class="close" onclick="closeModal('Lumora')">&times;</span>
+                        <h1>Lumora - Project Overview</h1>
+                        <div class="projects__image-container">
+                            <img src="images/lumora-img.png" alt="Lumora App Image">
+                        </div>
+                        <div class="modal-button-container">
+                            <button class="button-main"><a href="https://lumora-online-journal.web.app/"
+                                    target="_blank">Live Demo</a></button>
+                            <button class="button-main"><a href="https://github.com/lenachat/lumora"
+                                    target="_blank">Project on GitHub</a></button>
+                        </div>
+                        <p class="modal-text">
+                            Lumora is a progressive web application built with React, TypeScript, and Redux Toolkit. It
+                            allows
+                            users to write and manage journal entries online, with seamless access across multiple
+                            devices. Users can create personal accounts, track their self-care journey through a
+                            journaling streak, and receive a new daily affirmation.
+                            User authentication, database storage and hosting is done via Firebase, ensuring a secure
+                            and reliable experience.
+                        <h2>Features:</h2>
+                        <ul>
+                            <li><strong>Login / Signup:</strong> Users are able to login or signup with their
+                                personal account.</li>
+                            <li><strong>Dashboard:</strong> Overview with daily affirmation, journaling streak, past
+                                journal entries and favorite affirmations.</li>
+                            <li><strong>Journal entries:</strong> Users can view, edit and delete their past journal
+                                entries.</li>
+                            <li><strong>Favorite affirmations:</strong> Users can see a list of their favorite
+                                affirmations and remove them from favorites.</li>
+                            <li><strong>Account:</strong> Users are able to view and update their account data or delete
+                                their account entirely.</li>
+                        </ul>
+                        <h2>Technologies:</h2>
+                        <ul>
+                            <li>React</li>
+                            <li>TypeScript</li>
+                            <li>Redux Toolkit</li>
+                            <li>Tailwind CSS</li>
+                            <li>shadcn/ui</li>
+                            <li>Node.js</li>
+                            <li>Vite</li>
+                            <li>Firebase Authentication</li>
+                            <li>Firebase Firestore</li>
+                            <li>Firebase Hosting</li>
+                        </ul>
+                        </p>
+                        <div class="modal-button-container">
+                            <button class="button-main"><a href="https://lumora-online-journal.web.app/"
+                                    target="_blank">Live Demo</a></button>
+                            <button class="button-main"><a href="https://github.com/lenachat/lumora"
+                                    target="_blank">Project on GitHub</a></button>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="projects__grid-item" onclick="openModal('MovieMate')" data-aos="fade-right"
@@ -626,6 +701,7 @@
                         </a>
                     </div>
                 </div>
+
                 <div id="RockPaper-modal" class="modal">
                     <div class="modal-content">
                         <span class="close" onclick="closeModal('RockPaper')">&times;</span>
@@ -709,14 +785,17 @@
                             <p>Libraries &amp; Frameworks</p>
                             <ul>
                                 <li data-aos="fade-up" data-aos-duration="800">React</li>
-                                <li data-aos="fade-up" data-aos-duration="800" data-aos-delay="50">Recharts</li>
-                                <li data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">Angular</li>
-                                <li data-aos="fade-up" data-aos-duration="800" data-aos-delay="150">Angular-Material
+                                <li data-aos="fade-up" data-aos-duration="800" data-aos-delay="50">Redux Toolkit</li>
+                                <li data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">Recharts</li>
+                                <li data-aos="fade-up" data-aos-duration="800" data-aos-delay="150">Angular</li>
+                                <li data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">Angular-Material
                                 </li>
-                                <li data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">Bootstrap</li>
-                                <li data-aos="fade-up" data-aos-duration="800" data-aos-delay="250">jQuery</li>
-                                <li data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">React Native</li>
-                                <li data-aos="fade-up" data-aos-duration="800" data-aos-delay="350">Expo</li>
+                                <li data-aos="fade-up" data-aos-duration="800" data-aos-delay="250">Bootstrap</li>
+                                <li data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">jQuery</li>
+                                <li data-aos="fade-up" data-aos-duration="800" data-aos-delay="350">React Native</li>
+                                <li data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">Expo</li>
+                                <li data-aos="fade-up" data-aos-duration="800" data-aos-delay="450">Tailwind CSS</li>
+                                <li data-aos="fade-up" data-aos-duration="800" data-aos-delay="500">shadcn/ui</li>
                             </ul>
                         </div>
                         <div class="skills__grid-item">
